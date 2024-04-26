@@ -105,14 +105,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-// ========================이동=============================================
-$(document).ready(function() {
-  $('ul.shortcutbtn li:nth-child(3)').click(function() {
-    window.location.href = 'edu_list.html';
-  });
-});
-$(document).ready(function() {
-  $('#login-section').click(function() {
-    window.location.href = 'login.html';
-  });
-});
