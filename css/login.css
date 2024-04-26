@@ -29,90 +29,24 @@
     width: 100%;
     height: 119px;
 }
-/* ========================================== */
-.login-wrap{
-    position: relative;
-    display: block;
-    /* background-color: antiquewhite; */
-    height: 600px;
-}
-.inner{
-    width: 100%;
-    max-width: 1400px;
-    /* height: 100%; */
-}
 .login-wrapper{
-position: relative;
 width: 100%;
 height: 100%;
 display:flex;
-justify-content: space-between;
-margin-top:5%;
 }
 .login-menu{
-    margin-top: 3%;
-    display: block;
-    width: 17%;
+    position: relative;
+    width: 20%;
     height: 100%;
 }
-.login-menu ul{
-    width: 100%;
-}
-.login-menu ul li:first-child{
-    text-align: center;
-    font-size: 2rem;
-    color: #fff;
-    background-color: #80BCBD;
-    padding: 7% 10%;
-    font-weight: 600;
-}
-.login-menu ul li:nth-child(2){
-    background-color: #8400ff;
-    font-size: 1.5rem;
-    
-    padding: 5%;
-}
-/* =============================================== */
 .login-con{
-    display:block;
-    width: 75%;
-    height: 100%;
-}
-.login-text{
-    font-family: 'GangwonEduPowerExtraBoldA';
-    font-weight: bolder;
-    font-size:2rem;
-}
-.login-text::after{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #959595;
+    width: 80%;
 }
 .banner{
-    margin-top: 1%;
-    display: block;
+    position: absolute;
     width:100%;
     height: 100%;
 }
-.banner1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    gap: 4%;
-    background: url("../images/login/boanbg.png");
-  }
-.boan {
-    width: 15%;
-    margin: 3% 0 3% 3%;
-}
-.boancont{
-    width:50%;
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
+.boanbg{
+    position: absolute;
 }
