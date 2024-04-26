@@ -60,17 +60,30 @@ margin-top:5%;
 }
 .login-menu ul li:first-child{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fff;
     background-color: #80BCBD;
-    padding: 7% 10%;
+    padding: 14%;
     font-weight: 600;
 }
-.login-menu ul li:nth-child(2){
-    background-color: #8400ff;
-    font-size: 1.5rem;
-    
-    padding: 5%;
+.login-menu ul li{
+    position: relative;
+    background-color: #D5F0C1;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    padding: 14%;
+}
+.login-menu ul li::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 85%;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #AAD9BB;
 }
 /* =============================================== */
 .login-con{
