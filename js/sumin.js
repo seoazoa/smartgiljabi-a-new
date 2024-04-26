@@ -77,7 +77,7 @@ $(document).ready(function () {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         },
-        speed: 6500,
+        speed: 7600,
         // centeredSlides: true,
         allowMouseEvents: true, // 사용자가 마우스로 스와이프 가능
         noSwiping: true, // 사용자 스와이프에 대해 속도 속성을 무시
@@ -136,13 +136,14 @@ $(document).ready(function () {
       let duration = 0;
       let distanceRatio = 0;
       let clickable = true;
+      const calculateDistanceAndDuration = () => {
+        swReview.setTranslate(swReview.getTranslate());
+        distanceRatio = Math.abs((swReview.width * swReview.activeIndex + swReview.getTranslate()) / swReview.width);
+        duration = swReview.params.speed * distanceRatio;
+      };
 
       const stopAutoplay = () => {
-        swReview.setTranslate(swReview.getTranslate());
-
-        distanceRatio = Math.abs((swReview.width * swReview.activeIndex + swReview.getTranslate()) / swReview.width);
-
-        duration = swReview.params.speed * distanceRatio;
+        calculateDistanceAndDuration();
         swReview.autoplay.stop();
       };
 
@@ -150,7 +151,12 @@ $(document).ready(function () {
 
       const startAutoplay = () => {
         if (startTimer) clearTimeout(startTimer);
-        startTimer = swReview.autoplay.start();
+        calculateDistanceAndDuration();
+        swReview.slideTo(swReview.activeIndex);
+        // 시작하기 전에 약간의 지연을 추가합니다.
+        setTimeout(() => {
+          startTimer = swReview.autoplay.start();
+        }, 40);
       };
 
       const isPlaying = true;
@@ -161,12 +167,8 @@ $(document).ready(function () {
 
         if (isPlaying) stopAutoplay();
         else {
-          const distance = swReview.width * swReview.activeIndex + swReview.getTranslate();
-          duration = distance !== 0 ? duration : 0;
-          swReview.slideTo(swReview.activeIndex, duration);
           startAutoplay();
         }
-        // isPlaying = !isPlaying;
         setTimeout(() => {
           clickable = true;
         }, 200);
