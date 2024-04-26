@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+a {
+  text-decoration: none;
+}
+.section-title {
+  padding-bottom: 1.3%;
+}
+/* 사이드버튼 */
+.sidebtn {
+  width: 40%;
+  height: 50%;
+  position: fixed;
+  bottom: -10%;
+  left: 93%;
+  z-index: 9999;
+}
+.hangulbtn img {
+  width: 10%;
+  height: 100%;
+  cursor: pointer;
+}
+.topbtn {
+  width: 100%;
+  height: 100%;
+}
+.topbtn img {
+  width: 10%;
+}
+.hangulbtn img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 효과를 위한 transition 설정 */
+}
+.hangulbtn img:hover {
+  opacity: 0.7; /* 마우스를 올렸을 때의 투명도 */
+  transform: scale(1.05); /* 약간 확대되는 효과 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+.topbtn img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 효과를 위한 transition 설정 */
+}
+.topbtn img:hover {
+  opacity: 0.7; /* 마우스를 올렸을 때의 투명도 */
+  transform: scale(1.05); /* 약간 확대되는 효과 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+/* shortcut */
+.shortcut {
+  width: 100%;
+  height: 100%;
+  padding-top: 7%;
+}
+.shortcut .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.find {
+  font-family: "Pretendard-Regular";
+  font-size: 2rem;
+  color: #333;
+  padding-bottom: 1%;
+}
+.shortcutbtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5%;
+}
+.shortcutbtn > li {
+  position: relative;
+  width: calc(100% / 2 - 1%);
+  height: 100%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.shortcut > .inner > ul > li > .shortcontents {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 70%;
+  height: 60%;
+  z-index: 9;
+}
+.shortbtnti {
+  font-family: "GangwonEduPowerExtraBoldA";
+  font-size: 1.9rem;
+  color: #3e4149;
+}
+.shortcon {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3e4149;
+  line-height: 130%;
+  padding-top: 1%;
+}
+.shortcut > .inner > ul > li > .shortbtnti {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.shortcut > .inner > ul > li > .shortbtnimg {
+  position: absolute;
+  top: 4%;
+  right: 1%;
+  width: 22%;
+  height: 90%;
+  z-index: 9;
+}
+.shortcut > .inner > ul > li > .shortbg{
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+.shortcutbtnli .shortbg {
+  transition: 0.3s ease; /* 변화하는 과정을 0.3초 동안 부드럽게 */
+}
+.shortcutbtnli .shortbtnimg {
+  transition: 0.3s ease; /* 변화하는 과정을 0.3초 동안 부드럽게 */
+}
+.shortcutbtnli .shortcontents {
+  transition: 0.3s ease; /* 변화하는 과정을 0.3초 동안 부드럽게 */
+}
+/* .shortcutbtnli에 호버할 때 내부의 .shortbtnti 스타일 */
+.shortcutbtnli:hover .shortbg {
+  transform: translateY(-5%);
+}
+.shortcutbtnli:hover .shortbtnimg {
+  transform: translateY(-5%);
+}
+.shortcutbtnli:hover .shortcontents {
+  transform: translateY(-5%);
+}
+.shortcut > .inner > ul > li > .shortbg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 81.725px 81.725px 0;
+}
+.shortcut > .inner > ul > li:hover .shortbg {
+  box-shadow: 4px 8px 5px #c5ddb0;
+}
+/* recommend */
+.recommend {
+  width: 100%;
+  height: 100%;
+  padding-top: 7%;
+}
+.recommend .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.recommend > .inner > .btnmore{
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+  gap: 28%;
+}
+#morebtn{
+  display:none;
+}
+.morebtn {
+  width: 22%;
+  cursor: pointer; /* 마우스 오버 시 커서 변경 */
+}
+.morebtn2 {
+  width: 20%;
+  cursor: pointer; /* 마우스 오버 시 커서 변경 */
+}
+
+.morebtn > img,
+.offlinemore{ /* img와 recommendmore를 inline-block으로 설정 */
+  vertical-align: middle; /* 수직 중앙 정렬 */
+  transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+}
+.morebtn2 > img,
+.onlinemore {
+  vertical-align: middle; /* 수직 중앙 정렬 */
+  transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+}
+
+.morebtn > img {
+  width: 20%;
+  transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+}
+.morebtn2 > img {
+  width: 22%;
+  transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+}
+
+.offlinemore,
+.onlinemore {
+  font-family: "Pretendard-Regular";
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  margin-left: 5%; /* img와 recommendmore 사이 간격 */
+  transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+}
+
+/* 마우스 오버 효과 */
+.morebtn:hover img {
+  transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+}
+.morebtn2:hover img {
+  transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+}
+
+.morebtn:hover .offlinemore {
+  font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+}
+.morebtn2:hover .onlinemore {
+  font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+}
+
+.recommend > .inner > .chucheon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.recommend > .inner > .chucheon > li {
+  width: calc(100% / 4 - 1%);
+  height: 100%;
+  min-height: 501px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px 0px #c3c3c3;
+  transition: transform 0.3s ease;
+}
+.chucheon > li:hover {
+  transform: translateY(-10px); /* 위로 10px 이동 */
+}
+.image-size {
+  width: 100%; /* 기본 이미지 크기 */
+  transition: width 0.3s ease; /* 크기 변화 효과 */
+}
+
+/* 호버 시 이미지 크기 조정 */
+.image-size:hover {
+  width: 100%; /* 호버 시 이미지 크기 */
+}
+.gangbox {
+  padding: 7%;
+  cursor: pointer;
+  /* background-color: aquamarine; */
+  max-width: 346px;
+  max-height: 217px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.offline {
+  font-family: "Pretendard";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #aad9bb;
+  border-radius: 20px;
+  padding: 2% 3%;
+}
+.online {
+  font-family: "Pretendard";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #d5f0c1;
+  border-radius: 20px;
+  padding: 2% 3%;
+}
+.subtit {
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+}
+.gangboxtit {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #959595;
+  padding-left: 2%;
+}
+.ksas {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #242424;
+  padding: 8% 0% 4% 0%;
+}
+.ksas2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+.card {
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+  color: #7e7e7e;
+  text-align: right;
+}

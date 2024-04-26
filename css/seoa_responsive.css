@@ -1,0 +1,1347 @@
+@charset "utf-8";
+@media screen and (max-width: 1330px) {
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+}
+@media screen and (max-width: 1246px) {
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+}
+@media screen and (max-width: 1246px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.8rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 1165px) {
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .morebtn {
+    width: 23%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 21%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+}
+@media screen and (max-width: 1155px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.7rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 1155px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.6rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 1032px) {
+  .morebtn {
+    width: 25%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 23%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+}
+@media screen and (max-width: 1155px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.5rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 969px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.4rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 942px) {
+  .morebtn {
+    width: 26%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 24%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+}
+@media screen and (max-width: 905px) {
+  .morebtn {
+    width: 29%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 23%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+}
+@media screen and (max-width: 898px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.3rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 877px) {
+  .morebtn {
+    width: 29%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 24%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+}
+@media screen and (max-width: 839px) {
+  .morebtn {
+    width: 29%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 25%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.2rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 803px) {
+  .morebtn {
+    width: 29%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 25%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+}
+@media screen and (max-width: 1164px) {
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% / 4 - 1%);
+    height: 100%;
+    min-height: 430px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangbox {
+    padding: 4%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    max-width: 346px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 1.1rem;
+    margin-bottom: 1%;
+    color: #7e7e7e;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% / 4 - 1%);
+    height: 100%;
+    min-height: 400px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangbox {
+    padding: 4%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    max-width: 346px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 1.1rem;
+    margin-bottom: 1%;
+    color: #7e7e7e;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 992px) {
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 1.6rem;
+    color: #333;
+    padding-bottom: 1%;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% / 4 - 1%);
+    height: 100%;
+    min-height: 380px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangbox {
+    padding: 4%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    max-width: 346px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 1rem;
+    margin-bottom: 1%;
+    color: #7e7e7e;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 990px) {
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% / 4 - 1%);
+    height: 100%;
+    min-height: 350px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangbox {
+    padding: 4%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    max-width: 346px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 1rem;
+    margin-bottom: 1%;
+    color: #7e7e7e;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.1rem;
+    color: #3e4149;
+  }
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% / 4 - 1%);
+    height: 100%;
+    min-height: 320px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shortcut .inner {
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .sidebtn {
+    display: none;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 2rem;
+    color: #333;
+    padding-bottom: 1.5%;
+  }
+  .shortcutbtn > li {
+    width: calc(100% - 1%);
+    height: 100%;
+    margin-top: 3%;
+  }
+  .shortcut > .inner > ul > li > .shortcontents {
+    position: absolute;
+    top: 24%;
+    left: 5%;
+    width: 70%;
+    height: 60%;
+    z-index: 9;
+  }
+  .shortcut > .inner > ul > li > .shortbg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .shortcut > .inner > ul > li > .shortbtnimg {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    width: 22%;
+    height: 90%;
+    z-index: 9;
+  }
+  .shortcon {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.6rem;
+    color: #3e4149;
+  }
+  /* recommend */
+  .recommend .inner {
+    width: 100%;
+    padding: 10% 10%;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(2) {
+    display: none;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(3) {
+    display: none;
+  }
+  .btnmore {
+    margin-top: 3%;
+  }
+  .morebtn {
+    width: 45%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 40%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .recommend > .inner > .btnmore {
+    display: flex;
+    margin-top: 3%;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+  .morebtn > img,
+  .offlinemore {
+    vertical-align: middle; /* 수직 중앙 정렬 */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+  }
+  .morebtn2 > img,
+  .onlinemore {
+    vertical-align: middle; /* 수직 중앙 정렬 */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+  }
+
+  .morebtn > img {
+    width: 20%;
+    transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+  }
+  .morebtn2 > img {
+    width: 20%;
+    transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+  }
+  /* 마우스 오버 효과 */
+  .morebtn:hover img {
+    transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+  }
+  .morebtn2:hover img {
+    transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+  }
+
+  .morebtn:hover .offlinemore {
+    font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+  }
+  .morebtn2:hover .onlinemore {
+    font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .subtit {
+    white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 1rem;
+    margin-top: 3%;
+    color: #7e7e7e;
+  }
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% / 2 - 1%);
+    height: 100%;
+    min-height: 470px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangbox {
+    padding: 7%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    height: 100%;
+    max-width: 356px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 709px) {
+  .morebtn {
+    width: 45%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 40%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .recommend > .inner > .btnmore {
+    display: flex;
+    margin-top: 3%;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 659px) {
+  .morebtn {
+    width: 45%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 40%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .recommend > .inner > .btnmore {
+    display: flex;
+    margin-top: 3%;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 635px) {
+  .recommend > .inner > .chucheon > li {
+    width: 100% - 1%;
+    height: 100%;
+    min-height: 420px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.5rem;
+    color: #3e4149;
+  }
+}
+@media screen and (max-width: 610px) {
+  .morebtn {
+    width: 45%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 40%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .recommend > .inner > .btnmore {
+    display: flex;
+    margin-top: 3%;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 595px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.4rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 564px) {
+  .morebtn {
+    width: 45%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 40%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .recommend > .inner > .btnmore {
+    display: flex;
+    margin-top: 3%;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 556px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.3rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 516px) {
+  .shortbtnti {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.2rem;
+    color: #3e4149;
+  }
+  .shortcon {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3e4149;
+    line-height: 130%;
+    padding-top: 1%;
+  }
+}
+@media screen and (max-width: 511px) {
+  .morebtn {
+    width: 45%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .morebtn2 {
+    width: 40%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .offlinemore,
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .recommend > .inner > .btnmore {
+    display: flex;
+    margin-top: 3%;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .shortcut .inner {
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .sidebtn {
+    display: none;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 1.7rem;
+    color: #333;
+    padding-bottom: 1.5%;
+  }
+  .shortcutbtn > li {
+    width: calc(100% - 1%);
+    height: 100%;
+    margin-top: 3%;
+  }
+  .shortcut > .inner > ul > li > .shortcontents {
+    position: absolute;
+    top: 24%;
+    left: 5%;
+    width: 70%;
+    height: 60%;
+    z-index: 9;
+  }
+  .shortcut > .inner > ul > li > .shortbg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .shortcut > .inner > ul > li > .shortbtnimg {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    width: 22%;
+    height: 90%;
+    z-index: 9;
+  }
+  .shortcon {
+    display: none;
+  }
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.4rem;
+    color: #3e4149;
+  }
+  /* recommend */
+  .recommend .inner {
+    width: 100%;
+    padding: 10% 10%;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(2) {
+    display: none;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(3) {
+    display: none;
+  }
+  .recommend > .inner > .btnmore {
+    display: inline-block;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(4) {
+    margin-top: 25%;
+  }
+  .recommend > .inner > .btnmore {
+    position: relative;
+  }
+  .morebtn {
+    display: none;
+  }
+  #morebtn {
+    display: block;
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 15%;
+    text-align: center;
+  }
+  #offlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 3%;
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  .morebtn2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-right: 3%;
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  }
+  .onlinemore {
+    font-family: "Pretendard-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5%; /* img와 recommendmore 사이 간격 */
+    transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
+  }
+  #morebtn > img,
+  #offlinemore {
+    display: inline-block; /* img와 recommendmore를 inline-block으로 설정 */
+    vertical-align: middle; /* 수직 중앙 정렬 */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+  }
+  .morebtn2 > img,
+  .onlinemore {
+    display: inline-block; /* img와 recommendmore를 inline-block으로 설정 */
+    vertical-align: middle; /* 수직 중앙 정렬 */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+  }
+
+  #morebtn > img {
+    width: 15%;
+    transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+  }
+  .morebtn2 > img {
+    width: 15%;
+    transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+  }
+
+  /* 마우스 오버 효과 */
+  #morebtn:hover img {
+    transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+  }
+  .morebtn2:hover img {
+    transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+  }
+
+  #morebtn:hover #offlinemore {
+    font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+  }
+  .morebtn2:hover .onlinemore {
+    font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .subtit {
+    white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 0.9rem;
+    margin-top: 7%;
+    color: #7e7e7e;
+  }
+  .recommend > .inner > .chucheon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% - 1%);
+    height: 100%;
+    min-height: 370px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .gangbox {
+    padding: 5%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    height: 100%;
+    max-width: 356px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 489px) {
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.3rem;
+    color: #3e4149;
+  }
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 1.5rem;
+    color: #333;
+    padding-bottom: 1.5%;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 453px) {
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.2rem;
+    color: #3e4149;
+  }
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 1.4rem;
+    color: #333;
+    padding-bottom: 1.5%;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 418px) {
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.1rem;
+    color: #3e4149;
+  }
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 1.3rem;
+    color: #333;
+    padding-bottom: 1.5%;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 383px) {
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1rem;
+    color: #3e4149;
+  }
+}
+@media screen and (max-width: 348px) {
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 0.9rem;
+    color: #3e4149;
+  }
+}
+@media screen and (max-width: 320px) {
+  .shortcut .inner {
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .sidebtn {
+    display: none;
+  }
+  .section-title {
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .find {
+    font-family: "Pretendard-Regular";
+    font-size: 1.2rem;
+    color: #333;
+    padding-bottom: 1.5%;
+  }
+  .shortcutbtn > li {
+    width: calc(100% - 1%);
+    height: 100%;
+    margin-top: 3%;
+  }
+  .shortcut > .inner > ul > li > .shortcontents {
+    position: absolute;
+    top: 24%;
+    left: 5%;
+    width: 70%;
+    height: 60%;
+    z-index: 9;
+  }
+  .shortcut > .inner > ul > li > .shortbg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .shortcut > .inner > ul > li > .shortbtnimg {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    width: 22%;
+    height: 90%;
+    z-index: 9;
+  }
+  .shortcon {
+    display: none;
+  }
+  .shortbtnti {
+    position: absolute;
+    top: 30%;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-size: 0.9rem;
+    color: #3e4149;
+  }
+  /* recommend */
+  .recommend .inner {
+    width: 100%;
+    padding: 10% 10%;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(2) {
+    display: none;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(3) {
+    display: none;
+  }
+  .btnmore {
+    margin-top: 3%;
+  }
+  .morebtn > img,
+  .offlinemore {
+    display: inline-block; /* img와 recommendmore를 inline-block으로 설정 */
+    vertical-align: middle; /* 수직 중앙 정렬 */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+  }
+  .morebtn2 > img,
+  .onlinemore {
+    display: inline-block; /* img와 recommendmore를 inline-block으로 설정 */
+    vertical-align: middle; /* 수직 중앙 정렬 */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
+  }
+
+  .morebtn > img {
+    width: 15%;
+    transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+  }
+  .morebtn2 > img {
+    width: 15%;
+    transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
+  }
+
+  /* 마우스 오버 효과 */
+  .morebtn:hover img {
+    transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+  }
+  .morebtn2:hover img {
+    transform: translateX(10px); /* img를 오른쪽으로 10px 이동 */
+  }
+
+  .morebtn:hover .offlinemore {
+    font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+  }
+  .morebtn2:hover .onlinemore {
+    font-weight: bold; /* recommendmore의 폰트 굵기를 bold로 변경 */
+  }
+  .offline {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #aad9bb;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .online {
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    background-color: #d5f0c1;
+    border-radius: 20px;
+    padding: 2% 3%;
+  }
+  .subtit {
+    white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  }
+  .gangboxtit {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #959595;
+    padding-left: 2%;
+  }
+  .ksas {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #242424;
+    padding: 8% 0% 4% 0%;
+  }
+  .ksas2 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card {
+    font-size: 0.8rem;
+    margin-top: 7%;
+    color: #7e7e7e;
+  }
+  .recommend > .inner > .chucheon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .recommend > .inner > .chucheon > li {
+    width: calc(100% - 1%);
+    height: 100%;
+    min-height: 370px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px 0px #c3c3c3;
+  }
+  .recommend > .inner > .chucheon > li:nth-child(4) {
+    margin-top: 25%;
+  }
+  .gangbox {
+    padding: 5%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    height: 100%;
+    max-width: 356px;
+    max-height: 217px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+}

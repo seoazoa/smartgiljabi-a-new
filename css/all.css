@@ -1,0 +1,44 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  color: #333;
+}
+
+/* 전체 section style */
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.section-title {
+  font-family: "GangwonEduPowerExtraBoldA";
+  font-size: 2.75rem;
+  font-weight: 700;
+  max-width: 1400px;
+  margin: auto;
+}
+.cf::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+}
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}

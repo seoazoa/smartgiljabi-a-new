@@ -1,0 +1,865 @@
+@charset "utf-8";
+@import url(font.css);
+@import url(all.css);
+.header-wrap {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(0); 
+    transition: backdrop-filter 0.3s; 
+    box-shadow: 0 2px 20px 0 rgba(117, 117, 119, 0.37);
+    z-index: 1000; 
+    height: 13%;
+  }
+  .header-wrap.scrolled {
+    backdrop-filter: blur(7px); /* 블러 효과 적용 */
+  }
+  
+  /* 스크롤 내렸을 때 블러 효과 적용 */
+  
+
+/* 모바일메뉴 */
+.mbt {
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 58px;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    /* font-size: 0; */
+    border: 0;
+    cursor: pointer;
+  }
+  .mbt.active span {
+    background-color: #222;
+  }
+  .mbt span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+  }
+  .mbt span:nth-child(1) {
+    top: 0;
+    transform-origin: 0 50%;
+    transition: all 0.3s;
+  }
+  .mbt.ani span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .mbt span:nth-child(2) {
+    top: 50%;
+  }
+  .mbt.ani span:nth-child(2) {
+    opacity: 0;
+  }
+  .mbt span:nth-child(3) {
+    top: 100%;
+    transform-origin: 0 50%;
+    transition: all 0.3s;
+  }
+  .mbt.ani span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  /* 모바일 gnb */
+  .nav-mb {
+    position: absolute;
+    left: 100%;
+    top: 100px;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .nav-mb.active {
+    left: 0%;
+    opacity: 1;
+  }
+  .nav-mb-gnb  li {
+    line-height: 67px;
+  }
+  .nav-mb-gnb li a {
+    display: block;
+    padding: 0 40px;
+    font-size: 24px;
+    color: #222;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .nav-flex >li > a{
+    border-bottom: 0;
+  }
+.header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.logo{
+  position: relative;
+  display: block;
+    width: 20%;
+    /* height: 100%; */
+    /* background-color: #333333; */
+}
+.logo img{
+
+   position: relative;
+    width: 100%;
+    /* height: 100%; */
+    /* top: 16%; */
+
+}
+.header-menuline{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1%;
+    align-items: center;
+   
+}
+.header-menu{
+    width: 80%;
+    position: relative;
+}
+
+.header-menu >ul{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+
+}
+
+.header-menu> ul >li> a{
+  display: block;
+    color: #333333;
+    text-decoration: none;
+    font-family: "Pretendard-Regular";
+    font-weight: 700;
+  
+
+   
+}
+.header-menu> ul >li >a:hover{
+  color: #80bcbd;
+ 
+  
+}
+.hd-menu1{
+  position: relative;
+}
+.hd-menu1 > a{
+  display: block;
+  position: relative;
+}
+
+#login-button:hover{
+  color: #80bcbd;
+}
+#signup-button:hover{
+  color: #80bcbd;
+}
+.header-signup{
+    display: flex;
+    width: 20%;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#volunteer-apply{
+  position: relative;
+}
+.header-signup button{
+    width: 100%;
+    border: none;
+    background: none;
+   font-size: 1.3rem;
+   
+   font-family: "Pretendard-Regular";
+   cursor: pointer;
+   color: #333333;
+}
+.hd-menu2 {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left:-30px;
+  background-color: #80bcbd;
+  border-radius: 35px;
+  width:130px ;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1;
+  line-height: 1.2;
+}
+.hd-menu3{
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: -10px;
+  background-color: #80bcbd;
+  border-radius: 35px;
+  width:130px ;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1;
+  line-height: 1.2;
+}
+.hd-menu2 >li{
+  text-align: center;
+}
+.hd-menu2.active{
+  display: block !important;
+ 
+}
+.hd-menu3.active{
+  display: block !important;
+ 
+}
+.hd-menu2 a{
+  display: block;
+  position: absolute;
+color: #fff !important;
+right: 13%;
+text-align: center;
+top: 22%;
+font-size: 1.2rem;
+
+}
+
+.hd-menu3 a{
+  position: absolute;
+color: #fff !important;
+right: 13%;
+text-align: center;
+top: 22%;
+font-size: 1.2rem;
+
+}
+.hd-menu3:hover{
+  background-color: #aad9bb;
+ 
+}
+
+
+.visual-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 37.5vw;
+  max-height: 715px;
+  margin-top: 10%;
+}
+.video0wrap {
+  width: 67%;
+  height: 100%;
+ 
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.vs-video {
+  max-width: 1278px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.visual-button {
+  z-index: 9;
+  width: 20%;
+  height: 100%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  align-items: center;
+
+
+}
+.visual-button > a{
+  width: 70%;
+  height: calc(100% / 4);
+  display: block;
+  
+}
+.visual-button > a > button {
+    background-color: #f2f2f2;
+    border: 1px #80bcbd;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    font-family: 'GangwonEduPowerExtraBoldA';   
+    color: #444f59;
+    cursor: pointer;
+   
+}
+
+
+.callcenter{
+    align-items: center;
+    position: relative;
+}
+
+#callimg{
+    width: 18%;
+    height: 25%;
+    position: absolute;
+    right: 70%;
+    top:39%;
+    transform: rotate(17deg);
+}
+.visual-button button:hover {
+    background-color: #80bcbd; 
+    color: #ffffff; 
+  }
+ .qna{
+    position: relative;
+ }
+ #phone1, #phone2{
+    position: absolute;
+    right: -11%;
+    top: 75%;
+   
+ }
+ #phone1{
+    z-index: -1;
+ }
+ #phone2{
+display: none;
+
+ }
+ .visual-button button:hover #phone2{
+       display: block;
+      }
+
+#callimg2{
+    width: 18%;
+    height: 25%;
+    position: absolute;
+    right: 70%;
+    top:39%;
+    transform: rotate(17deg);
+    display: none;
+}
+.visual-button button:hover #callimg2{
+    display: block;
+}
+.visual-button button:hover #callimg{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1419px) {
+
+  .visual-wrap{
+    margin-top: 15%;
+  }
+  #callimg{
+    width: 18%;
+    height: 25%;
+    position: absolute;
+    right: 70%;
+    top:39%;
+    transform: rotate(17deg);
+}
+}
+
+@media screen and (max-width: 1287px){
+
+  #callimg2{
+    width: 18%;
+    height: 25%;
+    position: absolute;
+    right: 70%;
+    top:35%;
+    transform: rotate(17deg);
+    display: none;
+}
+#phone1, #phone2{
+  position: absolute;
+  right: -11%;
+  top: 65%;
+ 
+}
+}
+@media screen and (max-width: 1077px){
+  #phone1, #phone2{
+    position: absolute;
+    right: -7%;
+    top: 55%;
+   
+  }
+
+
+}@media screen and (max-width: 940px){
+  .visual-button > a > button {
+    font-size: 1.5rem;
+  border-radius: 30px;}
+
+}
+@media screen and (max-width: 923px){
+  
+  .visual-button > a > button {
+  font-size: 1.5rem;
+border-radius: 30px;}
+    
+  .visual-wrap{
+    margin-top: 18%;
+  }
+}
+@media screen and (max-width: 815px){
+  .visual-button > a > button {
+    font-size: 1.2rem;}
+    #phone1, #phone2{
+      position: absolute;
+      right: -7%;
+      top: 30%;
+     
+    }
+}
+@media screen and (max-width: 881px){
+  .visual-button > a > button {
+    font-size: 1.2rem;}
+
+    #phone1, #phone2{
+      position: absolute;
+      right: -11%;
+      top: 38%;
+     
+    }
+}
+@media screen and (max-width: 803px){
+  .header-menu ul{
+  
+    font-size: 1.2rem;
+
+}
+}
+@media screen and (max-width: 768px){
+  .logo {
+    position: relative;
+    display: block;
+    width: 60%;
+    /* height: 100%; */
+    /* background-color: #333333; */
+}
+.header-menu{
+  display: none;
+}
+.header-signup{
+  display: none;
+}
+.mbt{
+  display: block;
+ 
+}
+
+.nav-flex{
+  display: flex;
+  justify-content: space-around;
+border-bottom: 1px solid #e5e5e5;
+
+}
+.mbt.ani {
+  display: block;
+}
+
+.flex3{
+display: flex;
+}
+.nav-mb-gnb{
+display: block;
+}
+.video0wrap {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.vs-video {
+
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.visual-wrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap:3%;
+  margin-top: 25%;
+  align-items: center;
+}
+.visual-button{
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+  width: 92%;
+  height: 120px;
+  margin-left: 2%;
+
+  gap: 2%;
+  align-items: center;
+margin-top: 6%;
+}
+
+.visual-button > a{
+  width: 100%;
+  height:100%;
+  display: block;
+
+ 
+}
+
+.visual-button > a > button {
+    background-color: #f2f2f2;
+    border: 1px #80bcbd;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-family: 'GangwonEduPowerExtraBoldA';   
+    color: #444f59;
+    cursor: pointer;
+   
+}
+#phone1, #phone2{
+  position: absolute;
+  right: -13%;
+  top: 55%;
+ 
+}
+#callimg{
+  width: 18%;
+  height: 25%;
+  position: absolute;
+  right: 73%;
+  top:35%;
+  transform: rotate(17deg);
+}
+#callimg2{
+  width: 18%;
+  height: 25%;
+  position: absolute;
+  right: 73%;
+  top:35%;
+  transform: rotate(17deg);
+  display: none;
+}
+}@media screen and (max-width: 712px){
+  .video0wrap {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.visual-button{
+  margin-top: 1%;
+  }
+
+  .mbt {
+    
+    top: 40%;
+    right: 20px;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    /* font-size: 0; */
+    border: 0;
+    cursor: pointer;
+  }
+ 
+
+}
+@media screen and (max-width: 606px){
+  .visual-button{
+  margin-top: 1%;
+  }
+  .video0wrap {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+}
+@media screen and (max-width: 579px){
+  .visual-button > a > button {
+     
+    font-size: 1.3rem;
+  
+}
+
+}
+@media screen and (max-width: 562px){
+  .visual-button > a > button {
+     
+    font-size: 1.3rem;
+  
+}
+
+}
+@media screen and (max-width: 527px){
+  .visual-button{
+    display: flex;
+    flex-direction: row;
+    z-index: 9;
+    width: 92%;
+    height: 100px;
+    margin-left: 2%;
+
+    gap: 2%;
+    align-items: center;
+  margin-top: 2%;
+  }
+  .visual-button > a > button {
+  
+    border-radius: 25px;
+  
+   
+}
+  
+    .visual-button > a > button {
+     
+      font-size: 1.3rem;
+    
+  }
+  .video0wrap {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+}
+@media screen and (max-width: 424px)
+ {
+
+  .visual-button > a > button {
+    background-color: #f2f2f2;
+    border: 1px #80bcbd;
+    border-radius: 29px;
+    width: 91px;
+    height: 90px;
+    font-size: 1.2rem;
+    font-family: 'GangwonEduPowerExtraBoldA';   
+    color: #444f59;
+    cursor: pointer;
+   
+}
+#phone1, #phone2{
+  position: absolute;
+  right: -13%;
+  top: 45%;
+ 
+}
+#callimg{
+  width: 22%;
+  height: 25%;
+  position: absolute;
+  right: 70%;
+  top:35%;
+  transform: rotate(17deg);
+}
+#callimg2{
+  width: 22%;
+  height: 25%;
+  position: absolute;
+  right: 70%;
+  top:35%;
+  transform: rotate(17deg);
+}
+
+.mbt {  position: absolute;
+  top: 40%;
+  right: 20px;
+  width: 35px;
+  height: 25px;
+  background-color: transparent;
+  /* font-size: 0; */
+  border: 0;
+  cursor: pointer;
+}
+ }
+
+ @media screen and (max-width: 416px){
+  .vs-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+  .video0wrap{
+    width: 100%;
+    height: 100%;
+  }
+  .visual-wrap{
+   
+    margin-top:35%;
+    margin-bottom: 60%;
+  }
+  
+  .visual-button > a > button {
+    background-color: #f2f2f2;
+    border: 1px #80bcbd;
+    border-radius: 29px;
+    width: 80px;
+    height: 80px;
+    font-size: 1.2rem;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    color: #444f59;
+    cursor: pointer;
+}
+.visual-button > a > button {
+  background-color: #f2f2f2;
+  border: 1px #80bcbd;
+  border-radius: 24px;
+  width: 100%;
+  height: 78px;
+ 
+}
+.visual-button > a {
+  width: 100%;
+  height: 90%;
+  display: block;
+}
+.visual-button {
+ width: 80%;
+  display: flex;
+
+  gap: 1.5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#callimg{
+  width: 8%;
+  height: 40%;
+  position: absolute;
+  right: 60%;
+  top:30%;
+  transform: rotate(20deg);
+}
+#callimg2{
+  width: 8%;
+  height: 40%;
+  position: absolute;
+  right: 60%;
+  top:30%;
+  transform: rotate(20deg);
+}
+#phone1, #phone2{
+  position: absolute;
+  right: -1%;
+  top: 46%;
+ 
+}
+ }
+ @media screen and (max-width: 358px){
+  .video0wrap{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%;
+  }
+  #phone1, #phone2{
+    position: absolute;
+    right: -2%;
+    top: 31%;
+   
+  }
+  .visual-button > a > button {
+    border-radius: 20px;
+    height: 70px;
+
+}
+.visual-button{
+  margin-right: 3.2%;
+}
+.logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: #333333; */
+}
+.visual-wrap{
+
+  margin-bottom: 60%;
+}
+.visual-button > a {
+  height: 80%;
+}
+.visual-button {
+ width: 80%;
+  gap: 1.5%;
+
+}
+ }
+ @media screen and (max-width: 320px){
+  .mbt {  position: absolute;
+    top: 36%;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+
+  }
+  .logo {
+    position: relative;
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: #333333; */
+  }
+  .video0wrap{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%;
+  }
+  #phone1, #phone2{
+    position: absolute;
+    right: -2%;
+    top: 34%;
+   
+  }
+  .visual-wrap{
+   
+    margin-top:40%;
+    margin-bottom: 80%;
+  }
+  #callimg{
+    width: 8%;
+    height: 40%;
+    position: absolute;
+    right: 60%;
+    top:30%;
+    transform: rotate(4deg);
+  }
+  #callimg2{
+    width: 8%;
+    height: 40%;
+    position: absolute;
+    right: 60%;
+    top:30%;
+    transform: rotate(4deg);
+  }
+ }
