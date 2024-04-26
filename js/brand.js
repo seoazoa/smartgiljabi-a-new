@@ -2,14 +2,14 @@ window.addEventListener("load", function() {
     window.addEventListener('scroll', function() {
       var headerWrap = document.querySelector('.header-wrap');
       if (window.scrollY > 0) {
-        headerWrap.classList.add('scrolled'); // ìŠ¤í¬ë¡¤ëœ ê²½ìš° scrolled í´ë˜ìŠ¤ ì¶”ê°€
+        headerWrap.classList.add('scrolled'); // ½ºÅ©·ÑµÈ °æ¿ì scrolled Å¬·¡½º Ãß°¡
       } else {
-        headerWrap.classList.remove('scrolled'); // ìŠ¤í¬ë¡¤ì´ ìƒë‹¨ì— ìœ„ì¹˜í•œ ê²½ìš° scrolled í´ë˜ìŠ¤ ì œê±°
+        headerWrap.classList.remove('scrolled'); // ½ºÅ©·ÑÀÌ »ó´Ü¿¡ À§Ä¡ÇÑ °æ¿ì scrolled Å¬·¡½º Á¦°Å
       }
     });
   
-    // ë°˜ì‘í˜• (1024px) í–„ë²„ê±°ë°”ê°€ ìƒê²¼ì„ë•Œ
-    // í–„ë²„ê±°ë²„íŠ¼ì„ í´ë¦­í–ˆì„ë•Œ
+    // ¹İÀÀÇü (1024px) ÇÜ¹ö°Å¹Ù°¡ »ı°åÀ»¶§
+    // ÇÜ¹ö°Å¹öÆ°À» Å¬¸¯ÇßÀ»¶§
     const navMb = document.querySelector(".nav-mb");
     const htmlRoot = document.querySelector("html");
     const mbt = document.querySelector(".mbt");
@@ -17,18 +17,18 @@ window.addEventListener("load", function() {
     mbt.addEventListener("click", function() {
       const state = this.classList.contains("ani");
       if (state) {
-        // í–„ë²„ê±° ë²„íŠ¼ì„  ëˆŒë €ì„ë•Œ xê°€ ë°”ë€ŒëŠ” ì½”ë“œ
+        // ÇÜ¹ö°Å ¹öÆ°À»  ´­·¶À»¶§ x°¡ ¹Ù²î´Â ÄÚµå
         this.classList.remove("ani");
-        // ëª¨ë°”ì¼ì— ë©”ë‰´ê°€ ë‚˜íƒ€ë‚˜ëŠ” ì½”ë“œ
+        // ¸ğ¹ÙÀÏ¿¡ ¸Ş´º°¡ ³ªÅ¸³ª´Â ÄÚµå
         navMb.classList.remove("active");
-        // ìŠ¤í¬ë¡¤ì´ ì•ˆìƒê¸°ê²Œ í•˜ëŠ” ì½”ë“œ
+        // ½ºÅ©·ÑÀÌ ¾È»ı±â°Ô ÇÏ´Â ÄÚµå
         htmlRoot.classList.remove("active");
       } else {
-        // í–„ë²„ê±° ë²„íŠ¼ì„  ëˆŒë €ì„ë•Œ xê°€ ë°”ë€ŒëŠ” ì½”ë“œ
+        // ÇÜ¹ö°Å ¹öÆ°À»  ´­·¶À»¶§ x°¡ ¹Ù²î´Â ÄÚµå
         this.classList.add("ani");
-        // ëª¨ë°”ì¼ì— ë©”ë‰´ê°€ ë‚˜íƒ€ë‚˜ëŠ” ì½”ë“œ
+        // ¸ğ¹ÙÀÏ¿¡ ¸Ş´º°¡ ³ªÅ¸³ª´Â ÄÚµå
         navMb.classList.add("active");
-        // ìŠ¤í¬ë¡¤ì´ ì•ˆìƒê¸°ê²Œ í•˜ëŠ” ì½”ë“œ
+        // ½ºÅ©·ÑÀÌ ¾È»ı±â°Ô ÇÏ´Â ÄÚµå
         htmlRoot.classList.add("active");
       }
     });
@@ -55,7 +55,7 @@ window.addEventListener("load", function() {
             <i class="fa-solid fa-house"></i>
           </div>
           <span class="chevron"></span>
-          <span class="cate">ìˆ˜ê°•ì‹ ì²­</span>
+          <span class="cate">¼ö°­½ÅÃ»</span>
           <span class="chevron"></span>
           <span class="now-pg">${nowPg}</span>
         `;

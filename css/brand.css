@@ -2,6 +2,7 @@
 @import url(font.css);
 @import url(all.css);
 @import url(cheun.css);
+@import url(sumin.css);
 .top-banner {
   position: relative;
   width: 100%;
@@ -49,3 +50,122 @@
     z-index: 1;
     line-height: 1.2;
   }
+  /* 브랜드 소개 */
+  .esta-wrap{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  .esta-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+  }
+  .esta-2{
+    width: 100%;
+    height: 100%;
+  }
+  .esta-3{
+    width: 100%;
+    height: 100%;
+  }
+  .esta-4{
+    width: 100%;
+    height: 100%;
+  }
+  .write-1 > h1{
+  font-family: 'GangwonEduPowerExtraBoldA';  
+  font-size: 1.5rem;
+  }
+  .write-1 > img{
+    width: 100%;
+    height: 100%;
+  }
+  .write-1 > p{
+    font-size: 1.2rem;
+  }
+  .write-img1 > img{
+    width: 700px;
+    height: 100%;
+  }
+
+  .write-2> h1{
+  font-family: 'GangwonEduPowerExtraBoldA';  
+  font-size: 1.5rem;
+  }
+  .write-2> img{
+    width: 20%;
+    height: 20%;
+  }
+  .write-2 > p{
+    font-size: 1.2rem;
+  }
+  .write-img2 > img{
+    width: 700px;
+    height: 20%;
+  }
+  
+  .write-3 > h1{
+    font-family: 'GangwonEduPowerExtraBoldA';  
+    font-size: 1.5rem;
+    }
+    .write-3 > img{
+      width: 20%;
+      height: 20%;
+    }
+    .write-3 > p{
+      font-size: 1.2rem;
+    }
+    .write-img3 > img{
+      width: 700px;
+      height: 20%;
+    }
+    .write-4> h1{
+      font-family: 'GangwonEduPowerExtraBoldA';  
+      font-size: 1.5rem;
+      }
+      .write-4 > img{
+        width: 20%;
+        height: 20%;
+      }
+      .write-4 > p{
+        font-size: 1.2rem;
+      }
+      .write-img4 > img{
+        width: 700px;
+        height: 20%;
+      }
+
+
+      .brand-write{
+        font-family: 'GangwonEduPowerExtraBoldA';  
+        font-size: 1.5rem;
+      }
+      .brand-1 > p{
+        font-size: 1.2rem;
+      }
+     
+      .brand-1>img{
+        width: 400px;
+      }
+      .bd-bt1 > img{
+        width: 2%;
+        height: 10%;
+      }
+      .bd-bt1{
+        display: flex;
+      }
+      .brand-2 > p{
+        font-size: 1.2rem;
+      }
+      .bd-bt2> img{
+        width: 2%;
+        height: 10%;
+      }
+      .bd-bt2{
+        display: flex;
+      }
