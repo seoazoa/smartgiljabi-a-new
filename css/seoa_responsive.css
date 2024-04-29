@@ -1,4 +1,10 @@
 @charset "utf-8";
+@media screen and (max-width: 1470px) {
+  .section-title {
+    max-width: 1400px;
+    padding-top:1%;
+  }
+}
 @media screen and (max-width: 1330px) {
   .offlinemore,
   .onlinemore {
@@ -878,7 +884,7 @@
 @media screen and (max-width: 500px) {
   .shortcut .inner {
     width: 100%;
-    padding: 5% 10%;
+    padding: 20% 10%;
   }
   .sidebtn {
     display: none;
@@ -933,7 +939,7 @@
   /* recommend */
   .recommend .inner {
     width: 100%;
-    padding: 10% 10%;
+    padding: 0% 10%;
   }
   .recommend > .inner > .chucheon > li:nth-child(2) {
     display: none;
