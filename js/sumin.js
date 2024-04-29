@@ -1,4 +1,14 @@
 window.addEventListener("load", function () {
+  // footer a logo
+  // 링크 요소를 가져옴
+  const link = document.querySelector(".ft-logo");
+
+  // 클릭 이벤트 리스너 추가
+  link.addEventListener("click", function (event) {
+    // 기본 동작을 막음
+    event.preventDefault();
+  });
+
   fetch("data.json")
     .then(function (response) {
       if (!response.ok) {

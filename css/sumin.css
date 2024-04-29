@@ -6,11 +6,11 @@
 .review {
   position: relative;
   display: block;
-  padding: 7% 0;
 }
 .review .inner {
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 .review .review-wrap {
   height: 50.41vw;
@@ -507,12 +507,30 @@
     width: 8%;
   }
   .youtube-logo {
+    top: 8%;
     width: 4%;
-    right: 75px;
+    right: 60px;
   }
 
   .youtube-logo img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    height: 20vw;
+  }
+  .ft-logo {
+    width: 30%;
+  }
+  .footer-wrap {
+    padding: 6% 5% 2%;
+  }
+  .footer-wrap a {
+    font-size: 1.45rem;
+  }
+  .copy {
+    font-size: 1.125rem;
   }
 }
 @media screen and (max-width: 1180px) {
@@ -536,7 +554,7 @@
   .notice-box {
     width: calc(50% - 45px);
   }
-  .noti-list-li{
+  .noti-list-li {
     width: 100%;
   }
   .notice-list {
@@ -545,8 +563,39 @@
   .cs-center-box {
     width: calc(50% - 45px);
   }
-  .youtube-logo{
+  .youtube-logo {
     display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* footer */
+  .footer {
+    height: 35.1562vw;
+  }
+  .youtube-logo {
+    display: block;
+    width: 7%;
+    right: 45px;
+  }
+  .youtube-logo img {
+    width: 100%;
+  }
+  .footer-wrap {
+    padding: 17% 5% 2%;
+  }
+  .ft-logo {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  .footer-wrap a {
+    font-size: 1.45rem;
+  }
+  .footer-wrap a img {
+    width: 100%;
+  }
+  .copy {
+    margin-top: 6%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -631,7 +680,7 @@
   .youtube-logo {
     display: block;
     width: 7%;
-    right: 75px;
+    right: 35px;
   }
   .youtube-logo img {
     width: 100%;
@@ -642,7 +691,7 @@
   .ft-logo {
     position: absolute;
     top: 10%;
-    left: 0;
+    left: 5%;
   }
   .footer-wrap a {
     font-size: 1.45rem;
@@ -728,19 +777,78 @@
     height: 64vw;
   }
   .footer {
-    height: 63vw;
+    height: 76vw;
+  }
+  .youtube-logo {
+    display: block;
+    width: 8%;
+    right: 45px;
+    top: 9%;
   }
   .ft-logo {
     top: 8%;
   }
   .footer-wrap {
     flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
+    padding: 25% 5% 25%;
+  }
+  .ft-logo {
+    width: 40%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .footer-wrap a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer-wrap a:last-child {
+    position: relative;
+  }
+  .footer-wrap a:last-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25%;
+    width: 10px;
+    height: 10px;
+    background: url("../images/chevron-right-solid.png") no-repeat center / cover;
+    filter: brightness(200%);
+  }
+  .copy::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -75%;
+    transform: translateY(-75%);
+    left: 0;
+    width: 150%;
+    height: 1px;
+    background-color: #f0f0f0;
+  }
+  .copy {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    margin-top: 6%;
+    width: 60%;
+    text-align: left;
+    word-break: keep-all;
+    line-height: 1.24;
   }
 }
 @media screen and (max-width: 480px) {
-  .noti-list-li{
+  .noti-list-li {
     width: 100%;
+  }
+  .copy {
+    margin-top: 8%;
   }
 }
 @media screen and (max-width: 460px) {
@@ -805,31 +913,33 @@
   }
   /* footer */
   .footer {
-    height: 75.69vw;
+    height: 77.69vw;
   }
   .youtube-logo {
     display: none;
   }
-  .footer-wrap {
-    flex-direction: column;
-    gap: 15px;
-    padding: 30% 5% 2%;
-  }
-  .ft-logo {
-    width: 100%;
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
+
   .footer-wrap a img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
+  .copy::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -75%;
+    transform: translateY(-75%);
+    left: 0;
+    height: 1px;
+  }
   .copy {
-    margin-top: 7%;
+    position: absolute;
+    left: 5%;
+    margin-top: 6%;
+    text-align: left;
+    word-break: keep-all;
+    line-height: 1.24;
   }
 }
 @media screen and (max-width: 440px) {
@@ -842,15 +952,21 @@
     max-width: 370px;
   }
   .footer {
-    height: 83.12vw;
+    height: 88.12vw;
   }
-  .copy {
-    margin-top: 8%;
+  .copy::before{
+    width: 140%;
+  }
+  .copy{
+    width: 65%;
   }
 }
 @media screen and (max-width: 400px) {
   .inner {
     max-width: 350px;
+  }
+  .footer {
+    height: 83.12vw;
   }
 }
 @media screen and (max-width: 380px) {
@@ -860,22 +976,62 @@
   .notice-list {
     height: 80vw;
   }
-  .footer {
-    height: 86.12vw;
+  .ft-logo{
+    width: 45%;
+  }
+  .copy::before{
+    width: 130%;
+  }
+  .copy{
+    width: 70%;
   }
 }
 @media screen and (max-width: 360px) {
   .inner {
     max-width: 310px;
   }
+  .footer {
+    height: 84.12vw;
+  }
+
+}
+@media screen and (max-width: 350px) {
+  .footer {
+    height: 87.12vw;
+  }
+  .copy::before{
+    width: 125%;
+  }
+  .copy{
+    width: 73%;
+  }
 }
 @media screen and (max-width: 340px) {
   .inner {
     max-width: 290px;
   }
+  .footer {
+    height: 95.12vw;
+  }
+  .copy::before{
+    width: 115%;
+  }
+  .copy{
+    width: 78%;
+  }
 }
 @media screen and (max-width: 320px) {
   .notice-list {
     height: 85vw;
+  }
+  .footer {
+    height: 95.98vw;
+  }
+  .copy::before{
+    width: 120%;
+  }
+  .copy {
+    font-size: 1rem;
+    width: 75%;
   }
 }
