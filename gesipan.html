@@ -68,76 +68,94 @@
         text-decoration: none;
         color: #333;
       }
-    
-#catList {
-  /* margin-top: px; */
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 3%;
-}
 
-.cat-card {
-  margin: 0 auto;
-  border: 1px solid #c3c3c3;
-  box-shadow: 2px 4px 10px #c3c3c3;
-  border-radius: 35px;
-  margin-bottom: 10px;
-  width: calc(100% / 4 - 3%);
-  background-color: #fff;
-  margin-top: 45px;
-  height:371px;
-  /* background-color: #2980b9; */
-}
-.cat-card > a{
-  position: relative;
-}
-.cat-image {
-  width: 100%;
-  height: 65%;
-  display: block;
-  /* margin: 0 auto; */
-}
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.cat-info{
-  height: 20%;
-  background-color: #AAD9BB;
-}
-.page-link {
-  margin: 0 5px;
-  padding: 10px 15px;
-  background-color: #80BCBD;
-  /* 배경색 */
-  color: #fff;
-  /* 글꼴색 */
-  border: none;
-  border-radius: 20px;
-  /* 둥근 모서리 */
-  font-weight: bold;
-  transition: background-color 0.3s;
-  /* 호버 효과 */
-}
+      #catList {
+        /* margin-top: px; */
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 3%;
+      }
 
-.page-link:hover {
-  background-color: #AAD9BB;
-  /* 호버 시 배경색 변경 */
-}
+      .cat-card {
+        margin: 0 auto;
+        border: 1px solid #c3c3c3;
+        box-shadow: 2px 4px 10px #c3c3c3;
+        border-radius: 35px;
+        margin-bottom: 10px;
+        width: calc(100% / 4 - 3%);
+        background-color: #fff;
+        margin-top: 45px;
+        height: 371px;
+        /* background-color: #2980b9; */
+        transition: transform 0.3s ease-in-out;
+      }
+      .cat-card:hover {
+        transform: translateY(-10px);
+      }
+      .cat-card > a {
+        display: block;
+        position: relative;
+      }
 
-.active-page {
-  background-color: #649596;
-  /* 활성 페이지 배경색 변경 */
-}
+      .cat-image {
+        width: 100%;
+        height: 65%;
+        display: block;
+        /* margin: 0 auto; */
+      }
 
-.disabled {
-  background-color: #ccc;
-  /* 비활성화된 버튼 배경색 */
-  pointer-events: none;
-  /* 비활성화된 버튼을 클릭하지 못하게 설정 */
-}
+      .cat-image1 {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        border-radius: 35px 35px 0 0;
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin: 5% 0;
+      }
+      .cat-info {
+        height: 20%;
+        background-color: #aad9bb;
+      }
+      .page-link {
+        margin: 0 5px;
+        padding: 10px 15px;
+        background-color: #80bcbd;
+        /* 배경색 */
+        color: #fff;
+        /* 글꼴색 */
+        border: none;
+        border-radius: 20px;
+        /* 둥근 모서리 */
+        font-weight: bold;
+        transition: background-color 0.3s;
+        /* 호버 효과 */
+      }
+
+      .page-link:hover {
+        background-color: #aad9bb;
+        /* 호버 시 배경색 변경 */
+      }
+
+      .active-page {
+        background-color: #649596;
+        /* 활성 페이지 배경색 변경 */
+      }
+
+      .disabled {
+        background-color: #ccc;
+        /* 비활성화된 버튼 배경색 */
+        pointer-events: none;
+        /* 비활성화된 버튼을 클릭하지 못하게 설정 */
+      }
     </style>
   </head>
   <body>
@@ -234,7 +252,6 @@
               <div class="totsearch">
                 <div class="left">
                   <span class="totalnumber">전체 <strong class="number">12</strong>건</span>
-                  　<span>현재 <strong class="number">1</strong>/2 페이지</span>
                 </div>
                 <div class="right">
                   <select name="color" id="select">
@@ -293,7 +310,9 @@
                       // console.log(catCard);
                       catCard.innerHTML = `
               <a href="catcate.html?id=${cat.id}">
+                <a href="catcate.html?id=${cat.id}">
                                 <img class="cat-image" src="${cat.url}" alt="${cat.title} 사진">
+                                <img class="cat-image1" src="${cat.hoverurl}" alt="${cat.title} 사진">
                                 <span class="view">${cat.title}</span>
                                 <span class="hamgge">함께하는 스마트 세상</span> 
                                 <p class="ai">${cat.description}</p>
@@ -301,6 +320,18 @@
                       catListDiv.appendChild(catCard);
                     });
                     pagination(data.length);
+
+                    // 이미지 호버 이벤트를 추가합니다.
+                    $(".cat-card").hover(
+                      function () {
+                        $(this).find(".cat-image").css("opacity", "0");
+                        $(this).find(".cat-image1").css("opacity", "1");
+                      },
+                      function () {
+                        $(this).find(".cat-image").css("opacity", "1");
+                        $(this).find(".cat-image1").css("opacity", "0");
+                      }
+                    );
                   })
                   .catch((error) => {
                     console.error("데이터를 가져오는 중 에러가 발생했습니다:", error);

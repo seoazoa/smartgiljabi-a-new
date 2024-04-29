@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WRTSVQHH");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>스마트길잡이</title>
@@ -30,10 +44,10 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="노인 스마트 교육 플랫폼" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="노인을 위한 스마트 교육 플랫폼" />
-    <meta property="og:description" content="노인 분들을 위한 쉽고 편리한 디지털 교육 플랫폼. 스마트폰 사용법부터 온라인 금융 관리까지, 생활에 필요한 다양한 교육 콘텐츠를 제공합니다." />
-    <meta property="og:image" content="플랫폼 로고나 대표 이미지 URL" />
-    <meta property="og:url" content="플랫폼의 웹사이트 주소" />
+    <meta property="og:title" content="스마트길잡이" />
+    <meta property="og:description" content="모든 연령층을 위한 쉽고 편리한 디지털 교육 플랫폼. 스마트폰 사용법부터 온라인 금융 관리까지, 생활에 필요한 다양한 교육 콘텐츠를 제공합니다." />
+    <meta property="og:image" content="../images/meta.png" />
+    <meta property="og:url" content="https://smartgiljabi-a-new.vercel.app/" />
     <!-- swiper css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- fontawesome css cdn -->
@@ -65,6 +79,9 @@
     <script src="js/gesipan.js"></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTSVQHH" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
       <!-- 헤더 -->
       <div class="header-wrap .scrolled">
@@ -89,9 +106,10 @@
               </ul>
             </div>
             <div class="header-signup">
+              <a href="login.html">
               <div id="login-section">
                 <button id="login-button">로그인</button>
-              </div>
+              </div></a>
               <div id="dashboard-section" style="display: none">
                 <div id="username-display"></div>
                 <button id="logout-button">로그아웃</button>

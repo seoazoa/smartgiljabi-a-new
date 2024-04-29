@@ -105,3 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+// 이동 ==============================================
+$(document).ready(function() {
+  $('.chucheon li:nth-child(3)').click(function() {
+    window.location.href = 'gesipan.html';
+  });
+});
