@@ -7,6 +7,9 @@
 @import url(login.css);
 @import url(join.css);
 
+.witch{
+  float: right;
+}
 .login-menu ul li::after {
     position: absolute;
     display: block;

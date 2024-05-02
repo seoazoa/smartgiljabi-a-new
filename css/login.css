@@ -4,6 +4,9 @@
 @import url(seoa.css);
 @import url(sumin.css);
 @import url(gesipan.css);
+.witch {
+  float: right;
+}
 .header-wrap {
   display: flex;
   position: fixed;

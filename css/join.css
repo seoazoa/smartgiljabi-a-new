@@ -5,6 +5,10 @@
 @import url(sumin.css);
 @import url(gesipan.css);
 @import url(login.css);
+
+.witch {
+  float: right;
+}
 .header-wrap {
   display: flex;
   position: fixed;
