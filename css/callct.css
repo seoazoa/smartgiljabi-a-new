@@ -103,47 +103,20 @@ top: 58%;
         margin-top: 10%;
         font-size: 1.2rem;
         font-weight: 600;
-        transition: transform 0.4s, filter 0.4s;
     }
     .callct-2 > p{
         text-align: center;
         margin-top: 10%;
         font-size: 1.2rem;
         font-weight: 600;
-        transition: transform 0.4s, filter 0.4s;
+
     }
     .callct-3 > p{
         text-align: center;
         margin-top: 10%;
         font-size: 1.2rem;
         font-weight: 600;
-        transition: transform 0.4s, filter 0.4s;
-    }
-    .callct-1:hover p,
-.callct-2:hover p,
-.callct-3:hover p {
-    transform: scale(1.1);
-}
-    .callct-1 >img{
-        transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .callct-1 >img:hover{
-        transform: scale(1.05);
-        filter: brightness(90%) contrast(110%) drop-shadow(0px 0px 8px rgba(0,0,0,0.6));
-    }
-    .callct-2 >img{
-        transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .callct-2 >img:hover{
-        transform: scale(1.05);
-        filter: brightness(90%) contrast(110%) drop-shadow(0px 0px 8px rgba(0,0,0,0.6));
-    }
-    .callct-3 >img{
-        transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .callct-3 >img:hover{
-        transform: scale(1.05);
-        filter: brightness(90%) contrast(110%) drop-shadow(0px 0px 8px rgba(0,0,0,0.6));
+
     }
 
     @media screen and (max-width: 1027px){
@@ -181,57 +154,17 @@ top: 58%;
     }
     @media screen and (max-width: 768px){
         .callct-1 >img{
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
            }
            .callct-2 >img{
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
            }
            .callct-3 >img{
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
            }
-           .callct-wrap {
-            margin-bottom: 10%;
-           }
-    }
-    @media screen and (max-width: 620px){
-        .callct-1 >img{
-            width: 60px;
-            height: 60px;
-           }
-           .callct-2 >img{
-            width: 60px;
-            height: 60px;
-           }
-           .callct-3 >img{
-            width: 60px;
-            height: 60px;
-           }
-           .callct-123{
-            display: flex;
-            position: absolute;
-            width: 20%;
-            height: 10%;
-        left: 30%;    
-    top: 60%;
-        }
-        .callct-1 > p {
-          
-            font-size: 1.1rem;
-     
-        }
-        .callct-2 > p {
-          
-            font-size: 1.1rem;
-     
-        }
-        .callct-2 > p {
-          
-            font-size: 1.1rem;
-     
-        }
     }
     @media screen and (max-width: 530px){
 
@@ -265,49 +198,12 @@ top: 58%;
     top: 60%;
         }
     }
-    @media screen and (max-width: 520px){
-        .callct-img > img {
-            width: 110%;
-            left: 20%;
-        }
-        .callct-1 >img{
-            width: 50px;
-            height: 50px;
-           }
-           .callct-2 >img{
-            width: 50px;
-            height: 50px;
-           }
-           .callct-3 >img{
-            width: 50px;
-            height: 50px;
-           }
-           .callct-1 > p{
-            font-size: 1rem;
-           }
-           .callct-2 > p{
-            font-size: 1rem;
-           }
-           .callct-3 > p{
-            font-size: 1rem;
-           }
-           .callct-123{
-            display: flex;
-            position: absolute;
-            width: 20%;
-            height: 10%;
-        left: 30%;    
-    top: 60%;
-        }
-
-
-
-    }
+   
     @media screen and (max-width: 450px){
 
         .callct-img > img {
             width: 110%;
-            left: 20%;
+            left: 18%;
         }
     
            .callct-123{
@@ -316,7 +212,7 @@ top: 58%;
             width: 20%;
             gap: 12%;
             height: 10%;
-        left: 25%;    
+        left: 30%;    
     top: 60%;
         }
 
@@ -324,10 +220,8 @@ top: 58%;
     @media screen and (max-width: 320px){
 
         .callct-img > img {
-            width: 140%;
+            width: 110%;
             left: 18%;
-            margin-top: 10%;
-            padding: 10% 8%;
         }
     
            .callct-123{
@@ -335,8 +229,7 @@ top: 58%;
             position: absolute;
             width: 20%;
             height: 10%;
-        left: 17%;    
-    top: 62%;
+        left: 24%;    
+    top: 60%;
         }
-
     }

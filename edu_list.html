@@ -38,6 +38,7 @@
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
     <script src="js/edu_list.js"></script>
+    <script src="js/main-login.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -59,9 +60,9 @@
                   </ul>
                 </li>
                 <li id="volunteer-apply">
-                  <a href="">교육봉사신청</a>
+                  <a href="">자원봉사신청</a>
                   <ul class="hd-menu3">
-                    <li><a href="volunteer.html">교육봉사등록</a></li>
+                    <li><a href="volunteer.html">자원봉사등록</a></li>
                   </ul>
                 </li>
                 <li><a href="gesipan.html">교육자료실</a></li>
@@ -142,10 +143,9 @@
               <!-- data json -->
             </ul>
             <div class="er-pagination">
-              <button id="prev-btn">이전</button>
-              <span id="page-numbers">
-              </span>
-              <button id="next-btn">다음</button>
+              <button id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+              <span id="current-page">0</span> / <span id="total-pages">0</span>
+              <button id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
           </div>
         </section>
