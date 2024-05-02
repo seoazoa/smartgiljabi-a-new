@@ -55,8 +55,6 @@ window.addEventListener("load", function() {
             <i class="fa-solid fa-house"></i>
           </div>
           <span class="chevron"></span>
-          <span class="cate">수강신청</span>
-          <span class="chevron"></span>
           <span class="now-pg">${nowPg}</span>
         `;
     pgNaviContainer.innerHTML = html;

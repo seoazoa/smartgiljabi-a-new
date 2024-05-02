@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>수강신청</title>
+    <title>자원봉사신청</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
@@ -23,6 +23,17 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="favicon/KqGP9zKJ.ico" />
+    <!-- meta tag -->
+    <meta name="title" content="노인을 위한 스마트 교육 플랫폼" />
+    <meta name="description" content="노인 분들을 위한 쉽고 편리한 디지털 교육 플랫폼. 스마트폰 사용법부터 온라인 금융 관리까지, 생활에 필요한 다양한 교육 콘텐츠를 제공합니다." />
+    <meta name="keywords" content="노인 교육, 스마트 교육, 디지털 리터러시, 온라인 학습, 노인 대상 스마트폰 교육, 노인을 위한 IT 교육, 노인 생활 지원, 노인 온라인 금융 관리" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="노인 스마트 교육 플랫폼" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="스마트길잡이" />
+    <meta property="og:description" content="모든 연령층을 위한 쉽고 편리한 디지털 교육 플랫폼. 스마트폰 사용법부터 온라인 금융 관리까지, 생활에 필요한 다양한 교육 콘텐츠를 제공합니다." />
+    <meta property="og:image" content="../images/meta.png" />
+    <meta property="og:url" content="https://smartgiljabi-a-c02nmesdi-seoazoas-projects.vercel.app/" />
     <!-- fontawesome css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- 기본css -->
@@ -32,17 +43,18 @@
     <link rel="stylesheet" href="css/cheun.css" />
     <link rel="stylesheet" href="css/sumin.css" />
     <link rel="stylesheet" href="css/edu_list.css" />
-    <link rel="stylesheet" href="css/enrol.css" />
+    <link rel="stylesheet" href="css/volunteer.css" />
+    <!-- 제이쿼리 cdn -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- 기본 js cdn -->
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
-    <script src="js/enrol.js"></script>
+    <script src="js/volunteer.js"></script>
   </head>
   <body>
     <div class="wrap">
-      <!-- header area -->
+      <!-- header -->
       <div class="header-wrap .scrolled">
         <div class="header">
           <!-- 모바일메뉴 -->
@@ -110,61 +122,16 @@
       <!-- top banner -->
       <section class="top-banner">
         <div class="banner-txt">
-          <span class="banner-title">수강신청</span>
+          <span class="banner-title">자원봉사신청</span>
           <p class="banner-sub">스마트 세상으로의 한걸음, 스마트 길잡이가 함께합니다.</p>
         </div>
       </section>
+      <!-- pg navi -->
       <div class="pg-navi">
         <div class="inner">
           <!-- js data -->
         </div>
       </div>
-      <div class="inner">
-        <h2 class="pg-title">수강신청</h2>
-      </div>
-      <!-- submit area -->
-      <form id="submit-wrap">
-        <div class="inner">
-          <!-- 로컬스토리지 데이터 출력 (선택 강의 목록) -->
-          <div class="enrol-box">
-            <h2 class="box-title">스마트 길잡이 교육 신청 페이지 입니다.</h2>
-            <ul class="enrol-info" id="data-info"></ul>
-            <p class="sub-info">교육전반에 관한 안내를 위해 성함과 연락처를 수집하고 있습니다. 정확하게 입력하였는지 다시한번 확인해주세요.</p>
-          </div>
-          <!-- 로컬스토리지 데이터 저장 (연락처) -->
-          <div class="user-info-box">
-            <div class="input-bg">
-              <h2 class="box-title">성함과 연락처를 작성해주세요.</h2>
-              <p class="sub-title">안심하세요! 전화번호는 유출되지 않습니다</p>
-              <div class="input-box">
-                <label for="user-name">성함</label><input type="text" id="user-name" placeholder="홍길동" />
-                <span class="error-message" id="name-error"></span>
-                <br />
-                <label for="user-mobile">연락처</label><input type="tel" id="user-mobile" placeholder="01012345678" />
-                <span class="error-message" id="mobile-error"></span>
-              </div>
-            </div>
-            <button class="submit-btn" type="submit">강의신청하기</button>
-          </div>
-        </div>
-      </form>
-
-      <!-- footer area -->
-      <footer class="footer">
-        <a href="#" class="youtube-logo">
-          <img src="images/youtube_logo.png" alt="유튜브 로고" />
-        </a>
-        <div class="footer-wrap">
-          <a href="index.html" class="ft-logo">
-            <img src="images/main_logo_w.png" alt="하단홈페이지로고" />
-          </a>
-          <a href="#">이용약관 및 위치정보서비스</a>
-          <a href="#"><b>개인정보처리방침</b></a>
-          <a href="#">저작권보호정책</a>
-          <a href="#">고객센터</a>
-        </div>
-        <p class="copy">COPYRIGHT © 2024 이서아 김수민 탁채은. ALL RIGHTS RESERVED.</p>
-      </footer>
     </div>
   </body>
 </html>

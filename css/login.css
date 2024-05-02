@@ -84,16 +84,17 @@
   transform: translateX(-50%);
   background-color: #aad9bb;
 }
-.login-menu ul li:not(:first-child):not(:last-child)::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 85%;
-  height: 1px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.login-menu ul li:first-child::after,
+.login-menu ul li:last-child::after {
+  display: none; /* 첫 번째 li와 마지막 li의 선을 숨깁니다. */
+}
+.login-menu ul li {/* 기본 배경색 */
+  cursor: pointer;
+}
+
+.login-menu ul li.active {
   background-color: #aad9bb;
+  color: #fff; /* 클릭된 li의 텍스트 색상 */
 }
 /* =============================================== */
 .login-con {
@@ -139,6 +140,104 @@
   color: #333;
   font-weight: bold;
 }
+/* =============================================== */
+.log-wrap{
+  display:flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  border: 0.5px solid #959595;
+  padding: 7% 10%;
+}
+.log-left{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding-right: 10%;
+}
+.log-left::after{
+  position: absolute;
+  top:0;
+  right:0;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #333;
+}
+.log-id, .log-pw{
+  padding: 3% 0;
+  font-size: 1.375rem;
+}
+#login-Id, #login-Pwd{
+  font-family: "Pretendard-Regular";
+  padding: 4% 27% 4% 4%;
+  border: 0.5px solid #959595;
+  font-size: 1.1rem;
+}
+.checkbox{
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  align-items: center;
+}
+.checkbox > span{
+  padding-left: 1%;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+#autologin{
+  margin-left: 5%;
+}
+#login_Btn{
+  width: 100%;
+  border: none;
+  background-color: #80bcbd;
+  font-family: "Pretendard-Regular";
+  font-size: 1.375rem;
+  color: #fff;
+  padding: 4.5% 0;
+  cursor: pointer;
+}
+#login_Btn:hover{
+  background-color: #679899;
+}
+#btnlogin, #signUp_Btn{
+  border: none;
+  font-family: "Pretendard-Regular";
+  background-color: #AAD9BB;
+  color: #333;
+  font-weight: bold;
+  margin: 5% 3% 0 0;
+  padding: 2% 2%;
+  cursor: pointer;
+}
+.log-right{
+  width: 50%;
+  height: 100%;
+  padding-left: 7%;
+}
+.snslogin{
+  width: 100%;
+}
+.snslogin{
+  width: 100%;
+}
+.ilbantit{
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin-bottom: 4%;
+  font-size: 2rem;
+}
+.snslogin img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  padding-top: 4.5%;
+}
+/* ================================================= */
 .footer{
   position: relative;
 }

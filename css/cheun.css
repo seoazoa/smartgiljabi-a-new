@@ -87,6 +87,7 @@
   .nav-mb-gnb  li {
     line-height: 67px;
   }
+
   .nav-mb-gnb li a {
     display: block;
     padding: 0 40px;
@@ -117,6 +118,7 @@
     width: 100%;
     /* height: 100%; */
     /* top: 16%; */
+    min-width: 100%;
 
 }
 .header-menuline{
@@ -156,6 +158,7 @@
  
   
 }
+
 .hd-menu1{
   position: relative;
 }
@@ -163,7 +166,9 @@
   display: block;
   position: relative;
 }
-
+#my-room:hover{
+  color: #80bcbd;
+}
 #login-button:hover{
   color: #80bcbd;
 }
@@ -172,10 +177,12 @@
 }
 .header-signup{
     display: flex;
-    width: 20%;
+    width: 26%;
     gap: 5%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-right: 4%;
+
 }
 #volunteer-apply{
   position: relative;
@@ -315,12 +322,12 @@ font-size: 1.2rem;
 }
 
 #callimg{
-    width: 18%;
-    height: 25%;
-    position: absolute;
-    right: 70%;
-    top:39%;
-    transform: rotate(17deg);
+  width: 11%;
+  height: 15%;
+  position: absolute;
+  right: 74%;
+  top: 40%;
+  transform: rotate(25deg);
 }
 .visual-button button:hover {
     background-color: #80bcbd; 
@@ -347,12 +354,12 @@ display: none;
       }
 
 #callimg2{
-    width: 18%;
-    height: 25%;
-    position: absolute;
-    right: 70%;
-    top:39%;
-    transform: rotate(17deg);
+  width: 11%;
+  height: 15%;
+  position: absolute;
+  right: 74%;
+  top: 40%;
+  transform: rotate(25deg);
     display: none;
 }
 .visual-button button:hover #callimg2{
@@ -373,24 +380,29 @@ display: none;
     margin-top: 15%;
   }
   #callimg{
-    width: 18%;
-    height: 25%;
-    position: absolute;
-    right: 70%;
-    top:39%;
-    transform: rotate(17deg);
+    width: 12%;
+  height: 18%;
+  position: absolute;
+  right: 78%;
+  top: 37%;
+  transform: rotate(25deg);
+}
+#phone1, #phone2 {
+  position: absolute;
+  right: -8%;
+  top: 65%;
 }
 }
 
 @media screen and (max-width: 1287px){
 
   #callimg2{
-    width: 18%;
-    height: 25%;
+      width: 12%;
+    height: 18%;
     position: absolute;
-    right: 70%;
-    top:35%;
-    transform: rotate(17deg);
+    right: 78%;
+    top: 37%;
+    transform: rotate(25deg);
     display: none;
 }
 #phone1, #phone2{
@@ -400,31 +412,125 @@ display: none;
  
 }
 }
-@media screen and (max-width: 1077px){
+@media screen and (max-width: 1177px){
   #phone1, #phone2{
     position: absolute;
     right: -7%;
     top: 55%;
    
   }
+  .visual-button > a > button {
+    border-radius: 20px;}
 
 
-}@media screen and (max-width: 940px){
+}
+@media screen and (max-width: 1094px){
+  .visual-button > a > button {
+  border-radius: 20px;}
+
+}
+@media screen and (max-width: 1067px){
+
+  #callimg{
+    width: 12%;
+  height: 22%;
+  position: absolute;
+  right: 80%;
+  top: 36%;
+  transform: rotate(25deg);
+}
+  .header-signup button {
+ 
+    font-size: 1.2rem;
+  
+}
+}
+@media screen and (max-width: 1024px){
+ 
+  #callimg2{
+    width: 18%;
+    height: 25%;
+    position: absolute;
+    right: 74%;
+    top:35%;
+    transform: rotate(20deg);
+    display: none;
+}
+.visual-button > a > button {
+  background-color: #f2f2f2;
+  border: 1px #80bcbd;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+
+}
+}
+
+@media screen and (max-width: 986px){
+
+  #phone1, #phone2{
+    position: absolute;
+    right: -6%;
+    top: 50%;
+   
+  }
+  .header-signup button {
+ 
+    font-size: 1.1rem;
+  
+}
+}
+
+@media screen and (max-width: 940px){
   .visual-button > a > button {
     font-size: 1.5rem;
-  border-radius: 30px;}
+  border-radius: 20px;}
 
 }
 @media screen and (max-width: 923px){
   
   .visual-button > a > button {
   font-size: 1.5rem;
-border-radius: 30px;}
+border-radius: 20px;}
     
   .visual-wrap{
     margin-top: 18%;
   }
+  .header-menu ul{
+  
+    font-size: 1.1rem;
+
 }
+
+#phone1, #phone2 {
+  position: absolute;
+  right: -5%;
+  top: 44%;
+}
+}
+@media screen and (max-width: 890px){
+  .header-signup button {
+ 
+    font-size: 1rem;
+  
+}
+}
+@media screen and (max-width: 824px){
+.header-menu >ul{
+  width: 100%;
+  display: flex;
+  gap: 1%;
+  justify-content: space-between;
+  font-size: 1.1rem;
+
+}
+
+}
+
+
+
+
 @media screen and (max-width: 815px){
   .visual-button > a > button {
     font-size: 1.2rem;}
@@ -437,7 +543,8 @@ border-radius: 30px;}
 }
 @media screen and (max-width: 881px){
   .visual-button > a > button {
-    font-size: 1.2rem;}
+    font-size: 1.2rem;
+  border-radius: 20px;}
 
     #phone1, #phone2{
       position: absolute;
@@ -445,13 +552,20 @@ border-radius: 30px;}
       top: 38%;
      
     }
+   
 }
-@media screen and (max-width: 803px){
-  .header-menu ul{
-  
-    font-size: 1.2rem;
 
+
+@media screen and (max-width: 776px){
+
+  .header-signup button {
+ 
+    font-size: 0.9rem;
+  
 }
+
+
+
 }
 @media screen and (max-width: 768px){
   .logo {
@@ -474,9 +588,17 @@ border-radius: 30px;}
 
 .nav-flex{
   display: flex;
-  justify-content: space-around;
-border-bottom: 1px solid #e5e5e5;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e5e5e5;
+border-top:1px solid #e5e5e5;
+    align-items: center;
+}
 
+.separator {
+  width: 1px;
+  height: 70px; /* 적절한 높이로 조정하세요 */
+  background-color: #e5e5e5; /* 선의 색상을 원하는 색상으로 변경하세요 */
+  margin: 0 10px; /* 여백 조정 */
 }
 .mbt.ani {
   display: block;
@@ -551,19 +673,19 @@ margin-top: 6%;
  
 }
 #callimg{
-  width: 18%;
-  height: 25%;
+  width: 15%;
+  height: 22%;
   position: absolute;
-  right: 73%;
-  top:35%;
+  right: 77%;
+  top: 37%;
   transform: rotate(17deg);
 }
 #callimg2{
-  width: 18%;
-  height: 25%;
+  width: 15%;
+  height: 22%;
   position: absolute;
-  right: 73%;
-  top:35%;
+  right: 77%;
+  top: 37%;
   transform: rotate(17deg);
   display: none;
 }
@@ -602,14 +724,52 @@ margin-top: 6%;
     border-radius: 20px;
     overflow: hidden;
 }
+#callimg{
+  width: 17%;
+  height: 21%;
+  position: absolute;
+  right: 80%;
+  top: 37%;
+  transform: rotate(17deg);
 }
-@media screen and (max-width: 579px){
+#callimg2{
+  width: 17%;
+  height: 21%;
+  position: absolute;
+  right: 80%;
+  top: 37%;
+  transform: rotate(17deg);
+  display: none;
+}
+}
+@media screen and (max-width: 580px){
   .visual-button > a > button {
      
     font-size: 1.3rem;
   
 }
+.visual-button{
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+  width: 92%;
+  height: 100px;
+  margin-left: 2%;
 
+  gap: 2%;
+  align-items: center;
+margin-top: 2%;
+}
+.visual-button > a > button {
+
+  border-radius: 25px;
+
+ 
+}
+.vs-video {
+  width: 100%;
+  height: 100%;
+}
 }
 @media screen and (max-width: 562px){
   .visual-button > a > button {
@@ -653,13 +813,30 @@ margin-top: 6%;
 }
 
 }
+@media screen and (max-width: 447px){
+  .nav-mb-gnb li a {
+  
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 430px){
+.visual-button{
+  height: 91px;
+
+}#phone1, #phone2 {
+        position: absolute;
+        right: -4%;
+        top: 50%;
+    }
+
+}
 @media screen and (max-width: 424px)
  {
 
   .visual-button > a > button {
     background-color: #f2f2f2;
     border: 1px #80bcbd;
-    border-radius: 29px;
+    border-radius: 20px;
     width: 91px;
     height: 90px;
     font-size: 1.2rem;
@@ -675,22 +852,22 @@ margin-top: 6%;
  
 }
 #callimg{
-  width: 22%;
-  height: 25%;
+  width: 17%;
+  height: 21%;
   position: absolute;
-  right: 70%;
-  top:35%;
+  right: 80%;
+  top: 37%;
   transform: rotate(17deg);
 }
 #callimg2{
-  width: 22%;
-  height: 25%;
+  width: 17%;
+  height: 21%;
   position: absolute;
-  right: 70%;
-  top:35%;
+  right: 80%;
+  top: 37%;
   transform: rotate(17deg);
+  display: none;
 }
-
 .mbt {  position: absolute;
   top: 40%;
   right: 20px;
@@ -753,19 +930,18 @@ margin-top: 6%;
   flex-wrap: wrap;
 }
 #callimg{
-  width: 8%;
-  height: 40%;
-  position: absolute;
-  right: 60%;
-  top:30%;
-  transform: rotate(20deg);
-}
+  width: 5%;
+        height: 23%;
+        position: absolute;
+        right: 60%;
+        top: 34%;
+        transform: rotate(20deg);}
 #callimg2{
-  width: 8%;
-  height: 40%;
+  width: 5%;
+  height: 23%;
   position: absolute;
   right: 60%;
-  top:30%;
+  top: 34%;
   transform: rotate(20deg);
 }
 #phone1, #phone2{
@@ -774,8 +950,24 @@ margin-top: 6%;
   top: 46%;
  
 }
+.nav-mb-gnb li a {
+  
+  font-size: 18px;
+}
+ }
+ @media screen and (max-width: 395px){
+
+  .nav-mb-gnb li a {
+  
+    font-size: 14px;
+  }
+
  }
  @media screen and (max-width: 358px){
+  .nav-mb-gnb li a {
+  
+    font-size: 12px;
+  }
   .video0wrap{
     width: 100%;
     height: 100%;
@@ -816,6 +1008,17 @@ margin-top: 6%;
 }
  }
  @media screen and (max-width: 320px){
+  .nav-mb-gnb li a {
+  
+    font-size: 18px;
+  }
+  .nav-flex {
+    display: flex;
+flex-direction: column;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    align-items: flex-start;
+}
   .mbt {  position: absolute;
     top: 36%;
     right: 20px;
@@ -847,19 +1050,19 @@ margin-top: 6%;
     margin-bottom: 80%;
   }
   #callimg{
-    width: 8%;
-    height: 40%;
-    position: absolute;
-    right: 60%;
-    top:30%;
-    transform: rotate(4deg);
+            width: 6%;
+        height: 23%;
+        position: absolute;
+        right: 62%;
+        top: 35%;
+        transform: rotate(20deg);
   }
   #callimg2{
-    width: 8%;
-    height: 40%;
+    width: 6%;
+    height: 23%;
     position: absolute;
-    right: 60%;
-    top:30%;
-    transform: rotate(4deg);
+    right: 62%;
+    top: 35%;
+    transform: rotate(20deg);
   }
  }

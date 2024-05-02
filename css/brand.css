@@ -2,6 +2,7 @@
 @import url(font.css);
 @import url(all.css);
 @import url(cheun.css);
+@import url(sumin.css);
 .top-banner {
   position: relative;
   width: 100%;
@@ -40,7 +41,7 @@
     display: none;
     position: absolute;
     top: 32px;
-    left:325px;
+    left:-10px;
     background-color: #80bcbd;
     border-radius: 35px;
     width:130px ;
@@ -49,3 +50,583 @@
     z-index: 1;
     line-height: 1.2;
   }
+  /* 브랜드 소개 */
+  .esta-wrap{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  .esta-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+
+    justify-content: center;
+
+
+  }
+  .esta-2{
+    width: 100%;
+    height: 100%;
+margin-top: 10%;
+  }
+  .esta-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .esta-4{
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+
+
+  }
+  .write-img1{
+      display: block;
+      text-align: end;
+  }
+  
+  .write-img3{
+    display: block;
+    text-align: end;
+  }
+  .write-1 > h1{
+  font-family: 'GangwonEduPowerExtraBoldA';  
+  font-size: 3rem;
+  }
+  .write-1 > img{
+    width: 100%;
+    height: 100%;
+  }
+  .write-1 > p{
+    font-size: 1.8rem;
+    margin-top: 2%;
+  }
+  .write-img1 > img{
+    width: 1000px;
+    height: 100%;
+    
+  }
+  .write-2{
+    position: relative;
+    display: block;
+    text-align: right;
+  }
+  .write-4{
+    position: relative;
+    display: block;
+    text-align: right;
+  }
+  .write-2> h1{
+  font-family: 'GangwonEduPowerExtraBoldA';  
+  font-size: 3rem;
+  }
+  .write-2> img{
+    width: 20%;
+    height: 20%;
+  }
+  .write-2 > p{
+    font-size: 1.8rem;
+    margin-top: 2%;
+  }
+  .write-img2 > img{
+    width: 1000px;
+    height: 100%;
+  }
+  
+  .write-3 > h1{
+    font-family: 'GangwonEduPowerExtraBoldA';  
+    font-size: 3rem;
+    }
+    .write-3 > img{
+      width: 20%;
+      height: 20%;
+    }
+    .write-3 > p{
+      font-size: 1.8rem;
+      margin-top: 2%;
+    }
+    .write-img3 > img{
+      width: 1000px;
+      height: 100%;
+    }
+    .write-4> h1{
+      font-family: 'GangwonEduPowerExtraBoldA';  
+      font-size: 3rem;
+      }
+      .write-4 > img{
+        width: 20%;
+        height: 20%;
+      }
+      .write-4 > p{
+        font-size: 1.8rem;
+        margin-top: 2%;
+      }
+      .write-img4 > img{
+        width: 1000px;
+        height: 100%;
+      }
+
+
+      .brand{
+        width: 100%;
+        height: 100%;
+        margin-top: 15%;
+      }
+      .brand-bt{
+        line-height: 8;
+        margin-top: 10%;
+        margin-bottom: 3%;
+      }
+      .brand-write{
+        font-family: 'GangwonEduPowerExtraBoldA';  
+        font-size: 3rem;
+        text-align: center;
+      }
+      .brand-1> h1{
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 600;
+      }
+      
+      .brand-1>img {
+        margin-top: 3%;
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+      .bd-bt1 > img{
+        width: 5%;
+        height: 100px;
+      }
+      .bd-bt1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+
+      }
+      .bd-bt1 > p{
+        text-align: center;
+        font-size: 1.8rem;
+      }
+      
+      .brand-2 > p{
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      .bd-bt2> img{
+        width: 4%;
+        height: 90px;
+      }
+      .bd-bt2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+      }
+      .bd-bt2 > p{
+        text-align: center;
+        font-size: 1.8rem;
+
+      }
+      .bd-bt1 > p > span{
+        font-weight: 600;
+      }
+      .bd-bt2 > p > span{
+        font-weight: 600;
+      }
+
+      /* 반응형 */
+      @media screen and (max-width: 1020px){
+        .write-img1{
+          width: 100%;
+      }
+      
+      .write-img1 > img{
+        width: 70%;
+        height: 100%;
+        
+      }
+        .write-img2{
+          width: 100%;
+      }
+      
+      .write-img2 > img{
+        width: 70%;
+        height: 100%;
+        
+      }
+        .write-img3{
+          width: 100%;
+      }
+      
+      .write-img3 > img{
+        width: 70%;
+        height: 100%;
+        
+      }
+        .write-img4{
+          width: 100%;
+      }
+      
+      .write-img4 > img{
+        width: 70%;
+        height: 100%;
+        
+      }
+    }
+    @media screen and (max-width: 768px){
+
+      .bd-bt1 > img{
+        width: 8%;
+        height: 80px;
+      }
+      .bd-bt1 > p{
+        text-align: center;
+        font-size: 1.6rem;
+      }
+      .bd-bt2> img{
+        width: 8%;
+        height: 70px;
+      }
+     
+      .bd-bt2 > p{
+        text-align: center;
+        font-size: 1.6rem;
+
+      }
+
+    }
+    @media screen and (max-width: 620px){
+ 
+      .write-1 > h1{
+
+      font-size: 2.5rem;
+      }
+
+      .write-1 > p{
+        font-size: 1.5rem;
+        margin-top: 2%;
+      }
+
+
+      .write-2> h1{
+
+      font-size: 2.5rem;
+      }
+
+      .write-2 > p{
+        font-size: 1.5rem;
+        margin-top: 2%;
+      }
+  
+      .write-3 > h1{
+        font-size: 2.5rem;
+        }
+
+        .write-3 > p{
+          font-size: 1.5rem;
+          margin-top: 2%;
+        }
+ 
+        .write-4> h1{
+          font-size: 2.5rem;
+          }
+   
+          .write-4 > p{
+            font-size: 1.5rem;
+            margin-top: 2%;
+          }
+    
+          .bd-bt1 > img{
+            width: 8%;
+            height: 80px;
+          }
+          .bd-bt1 > p{
+            text-align: center;
+            font-size: 1.4rem;
+          }
+          .bd-bt2> img{
+            width: 8%;
+            height: 70px;
+          }
+         
+          .bd-bt2 > p{
+            text-align: center;
+            font-size: 1.4rem;
+    
+          }
+          .brand-1> h1{
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+          }
+    }
+    @media screen and (max-width: 523px){
+
+      .write-1 > h1{
+
+        font-size: 2.3rem;
+        }
+  
+        .write-1 > p{
+          font-size: 1.4rem;
+          margin-top: 2%;
+        }
+  
+  
+        .write-2> h1{
+  
+        font-size: 2.3rem;
+        }
+  
+        .write-2 > p{
+          font-size: 1.4rem;
+          margin-top: 2%;
+        }
+    
+        .write-3 > h1{
+          font-size: 2.3rem;
+          }
+  
+          .write-3 > p{
+            font-size: 1.4rem;
+            margin-top: 2%;
+          }
+   
+          .write-4> h1{
+            font-size: 2.3rem;
+            }
+     
+            .write-4 > p{
+              font-size: 1.4rem;
+              margin-top: 2%;
+            }
+      
+            .bd-bt1 > img{
+              width: 8%;
+              height: 80px;
+            }
+            .bd-bt1 > p{
+              text-align: center;
+              font-size: 1.2rem;
+            }
+            .bd-bt2> img{
+              width: 8%;
+              height: 70px;
+            }
+           
+            .bd-bt2 > p{
+              text-align: center;
+              font-size: 1.2rem;
+              line-height: 1;
+            }
+            .brand-1> h1{
+              font-size: 1.5rem;
+              text-align: center;
+              font-weight: 600;
+            }
+
+
+
+    }
+    @media screen and (max-width: 450px){
+
+      .bd-bt1 > img {
+        width: 15%;
+        height: 80px;
+    }
+      .bd-bt2 > img {
+        width: 13%;
+        height: 80px;
+    }
+      .bd-bt1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+      .bd-bt2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .bd-bt1 > p {
+      text-align: center;
+      font-size: 1.5rem;
+  }
+    .bd-bt2 > p {
+      text-align: center;
+      font-size: 1.5rem;
+  }
+  .brand{
+    margin-top: 33%;
+  }
+  .esta-2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 23%;
+}
+  .esta-3 {
+    width: 100%;
+    height: 100%;
+    margin-top: 23%;
+}
+  .esta-4 {
+    width: 100%;
+    height: 100%;
+    margin-top: 23%;
+}
+}
+@media screen and (max-width: 418px){
+
+  .bd-bt1 > p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+  .bd-bt2 > p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.brand-1> h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+}
+@media screen and (max-width: 320px){
+
+  .bd-bt1 > p {
+    text-align: center;
+    font-size: 1rem;
+}
+  .bd-bt2 > p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.brand-1> h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.brand-1> h1 {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+}
+.bd-bt1 > img {
+  width: 15%;
+  height: 60px;
+}
+.bd-bt2 > img {
+  width: 15%;
+  height: 60px;
+}
+.brand-bt {
+  line-height: 8;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.brand-1>img {
+  margin-top: 10%;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.brand-write {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 2rem;
+  text-align: center;
+}
+.write-1 > h1 {
+  font-size: 2rem;
+}
+.write-2 > h1 {
+  font-size: 2rem;
+}
+.write-3 > h1 {
+  font-size: 2rem;
+}
+.write-4 > h1 {
+  font-size: 2rem;
+}
+.write-1 > p {
+  font-size: 1.1rem;
+  margin-top: 5%;
+  line-height: 1.2;
+}
+.write-2> p {
+  font-size: 1.1rem;
+  margin-top: 5%;
+  line-height: 1.2;
+
+}
+.write-3 > p {
+  font-size: 1.1rem;
+  margin-top: 5%;
+  line-height: 1.2;
+
+}
+.write-4 > p {
+  font-size: 1.1rem;
+  margin-top: 5%;
+  line-height: 1.2;
+
+}
+.write-1 > h1 > img{
+  width: 3%;
+}
+.write-2 > h1 > img{
+  width: 3%;
+}
+.write-3 > h1 > img{
+  width: 3%;
+}
+.write-4 > h1 > img{
+  width: 3%;
+}
+.write-img1 > img {
+  width: 70%;
+  height: 100%;
+  margin-top: 15%;
+}
+.write-img2 > img {
+  width: 70%;
+  height: 100%;
+  margin-top: 15%;
+}
+.write-img3 > img {
+  width: 70%;
+  height: 100%;
+  margin-top: 15%;
+}
+.write-img4 > img {
+  width: 70%;
+  height: 100%;
+  margin-top: 15%;
+}
+}
+
+
+
