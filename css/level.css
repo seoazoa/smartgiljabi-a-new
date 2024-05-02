@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url(font.css);
+@import url(all.css);
+@import url(cheun.css);
+@import url(sumin.css);
+.top-banner {
+  position: relative;
+  width: 100%;
+  height: 390px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(90deg, #80bcbd 0%, #aad9bb 100%);
+}
+.banner-txt {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.banner-title {
+  font-family: "GangwonEduPower";
+  font-style: normal;
+  font-size: 2.75rem;
+  line-height: 2.76rem;
+  color: #ffffff;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.banner-sub {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 1.825rem;
+  color: #f2f2f2;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 30px;
+}
+/* 헤더 부메뉴 수정 */
+.hd-menu3 {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left:-10px;
+    background-color: #80bcbd;
+    border-radius: 35px;
+    width:130px ;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1;
+    line-height: 1.2;
+  }
+  /* 디지털 역량진단 */
+  .level-wrap{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  .lv-write{
+    width: 100%;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 10%;
+    /* background:url('../images/list-img.png') no-repeat;
+    background-size: cover;
+    background-size: contain; 
+    background-size: 100% 200%; */
+  }
+  #pp1{
+    font-size: 2.2rem;
+    font-family: 'GangwonEduPowerExtraBoldA';  
+    margin-bottom: 2%;
+  }
+  .lv-write > p{
+    font-size: 1.5rem;
+  }
+ .card-write1{
+    width: 100%;
+ }
+ .card-write1 > p{
+    font-size: 2rem;
+    font-family: 'GangwonEduPowerExtraBoldA';  
+    font-weight: 600;
+ }
+ .card-box1{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+ }
+ .card-write2{
+    background-color: #aad9bb;
+    width: 100%;
+ }
+ .card-write2-top{
+display: flex;
+align-items: center;
+gap: 2%;
+ }
+ .card-write2-top >img{
+    width: 6%;
+    height: 3%;
+ }
+ .card-ul1{
+    line-height: 200%;
+width: 100%;
+ }
+.card-ul1 >li{
+    font-size: 1.2rem;
+}
+ .card-write2-top > p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+ .card-write3{
+    background-color: #80bcbd;
+    width: 100%;
+ }
+ .card-write3-top{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+     }
+     .card-write3-top >img{
+        width: 6%;
+        height: 3%;
+        
+     }
+     .card-ul2{
+        line-height: 200%;
+    width: 100%;
+     }
+    .card-ul2>li{
+        font-size: 1.2rem;
+    }
+     .card-write3-top > p{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 5%;
+
+    }
+    
+ .lv-write2{
+    width: 100%;
+ }
+ .lv-top{
+    width: 100%;
+ }
