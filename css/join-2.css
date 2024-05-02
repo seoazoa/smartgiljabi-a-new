@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url(font.css);
+@import url(all.css);
+@import url(seoa.css);
+@import url(sumin.css);
+@import url(gesipan.css);
+@import url(login.css);
+@import url(join.css);
+
+.login-menu ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 85%;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #aad9bb;
+  }
+  .login-menu ul li:first-child::after,
+  .login-menu ul li:last-child::after {
+    display: none; /* 첫 번째 li와 마지막 li의 선을 숨깁니다. */
+  }
+  .login-menu ul li {/* 기본 배경색 */
+    cursor: pointer;
+  }
+  
+  .login-menu ul li.active {
+    background-color: #aad9bb;
+    color: #fff; /* 클릭된 li의 텍스트 색상 */
+  }
+  .login-menu ul li.active a{
+    color: #fff;
+  }
+
+.join-wrap{
+  display: flex;
+    margin-top: 3%;
+    padding: 7% 10%;
+    background-color: #fff;
+}
+.join-inwrap2{
+  padding: 2% 1% 2% 2%;
+  border: 1px solid #959595;
+  background-color: #fff;
+}
+.log-left{
+  padding:0;
+}
+#signUp-Id, #signUp-Pwd {
+    font-family: "Pretendard-Regular";
+    padding: 4% 15% 4% 4%;
+    border: 0.5px solid #959595;
+    font-size: 1.1rem;
+}
+#double_Check_Btn{
+    font-family: "Pretendard-Regular";
+    padding: 4%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #80bcbd;
+    cursor: pointer;
+    border: none;
+}
+#double_Check_Btn:hover{
+  background-color: #679899;
+}
+#login_Btn{
+  width: 395px;
+    font-family: "Pretendard-Regular";
+    padding: 2% 1%;
+    border: none;
+    background-color: #AAD9BB;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+#login_Btn:hover{
+    background-color: #8fb89e;
+}
+#signUp_Btn:hover{
+    background-color: #679899;
+}
+#signUp_Btn{
+    font-family: "Pretendard-Regular";
+    padding: 4% 40.6%;
+    border: none;
+    background-color: #80bcbd;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+.banner1{
+  margin-top: 2%;
+}

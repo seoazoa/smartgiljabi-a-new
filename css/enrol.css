@@ -54,7 +54,7 @@
   text-align: center;
 }
 /* user info box */
-.user-info-box {
+.input-bg {
   width: 100%;
   height: calc(100% / 2 - 50px);
   background-color: #fff;
@@ -105,8 +105,29 @@
   padding: 25px;
   text-align: center;
   margin: 12% auto;
+  cursor: pointer;
 }
 .submit-btn.active {
   background: #80bcbd;
   color: #fff;
 }
+.error-message {
+  display: block;
+  width: 100%;
+  height: 15px;
+  color: red; /* 오류 메시지의 텍스트 색상 설정 */
+  font-size: 12px; /* 오류 메시지의 글꼴 크기 설정 */
+  margin-top: 5px; /* 오류 메시지와 입력란 사이의 간격 설정 */
+  /* background-color: brown; */
+}
+/* #user-chk{
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.input-box .user-chk{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #959595;
+  width: 15%;
+} */

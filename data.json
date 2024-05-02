@@ -942,8 +942,8 @@
       ]
     },
     {
-      "location" : "제주",
-      "centers" : [
+      "location": "제주",
+      "centers": [
         {
           "name": "서귀포시노인복지관",
           "value": "서귀포시노인복지관"
@@ -967,24 +967,24 @@
       ]
     }
   ],
-  "lecture_list" : [
+  "lecture_list": [
     {
-      "number" : "kiosk",
-      "imgSrc" : "images/kiosk.png",
-      "lecture_title" : "무인 결제대(키오스크) 사용하기",
-      "erinfo" : "카페나 음식점에서 주문을 하거나, 상점에서 물건 구매를 할 때, 결제 수단을 원활하게 사용하기 위한 무인 결제대 (키오스크) 기기 사용법을 알려줍니다."
+      "number": "kiosk",
+      "imgSrc": "images/kiosk.png",
+      "lecture_title": "무인 결제대(키오스크) 사용하기",
+      "erinfo": "카페나 음식점에서 주문을 하거나, 상점에서 물건 구매를 할 때, 결제 수단을 원활하게 사용하기 위한 무인 결제대 (키오스크) 기기 사용법을 알려줍니다."
     },
     {
-      "number" : "mobile",
-      "imgSrc" : "images/map.png",
-      "lecture_title" : "스마트폰 앱 사용하기",
-      "erinfo" : "생활 편의를 위한 앱 사용법, 교통 앱 이용 방법(버스 도착 시간 알아보기) 등을 알려줍니다."
+      "number": "mobile",
+      "imgSrc": "images/map.png",
+      "lecture_title": "스마트폰 앱 사용하기",
+      "erinfo": "생활 편의를 위한 앱 사용법, 교통 앱 이용 방법(버스 도착 시간 알아보기) 등을 알려줍니다."
     },
     {
-      "number" : "smartbank",
-      "imgSrc" : "images/mobile_bank.png",
-      "lecture_title" : "인터넷 은행(스마트 뱅킹) 사용하기",
-      "erinfo" : "인터넷 은행 및 모바일 결제에 대해 알아보고, 각종 인증서에는 무엇이 있는지, 어떻게 발급받는지 알려줍니다. 금융 사기의 유형을 알고 예방 방법을 살펴봅니다."
+      "number": "smartbank",
+      "imgSrc": "images/mobile_bank.png",
+      "lecture_title": "인터넷 은행(스마트 뱅킹) 사용하기",
+      "erinfo": "인터넷 은행 및 모바일 결제에 대해 알아보고, 각종 인증서에는 무엇이 있는지, 어떻게 발급받는지 알려줍니다. 금융 사기의 유형을 알고 예방 방법을 살펴봅니다."
     }
   ]
 }

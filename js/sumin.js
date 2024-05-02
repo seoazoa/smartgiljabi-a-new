@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
   function showNotice() {
     let html = "";
     let maxVisibleItems = 2; // 기본적으로 최대 2개의 항목을 표시
-    if (window.innerWidth < 480) {
+    if (window.innerWidth < 520) {
       // 화면 너비가 480px 이상인 경우
       maxVisibleItems = 1; // 최대 표시할 항목 수를 1개로 설정
     }
