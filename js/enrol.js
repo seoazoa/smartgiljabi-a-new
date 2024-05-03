@@ -154,11 +154,27 @@ window.addEventListener("load", function () {
     }
   }
 
-  // 입력란에 입력이 있을 때 사용자 정보를 저장하는 이벤트 리스너 추가
+  // 각 입력란의 입력 이벤트 리스너 등록
   document.querySelectorAll(".user-info-box input").forEach(function (input) {
     input.addEventListener("input", function () {
-      // 정보 입력 시 active 클래스 추가
-      document.querySelector(".submit-btn").classList.add("active");
+      // 모든 입력란의 값을 가져옵니다.
+      const inputs = document.querySelectorAll(".user-info-box input");
+      let allFilled = true;
+
+      // 각 입력란이 비어 있는지 확인합니다.
+      inputs.forEach(function (input) {
+        if (input.value.trim() === "") {
+          allFilled = false;
+        }
+      });
+
+      // 모든 입력란이 채워져 있으면 active 클래스를 추가하고, 그렇지 않으면 제거합니다.
+      const submitBtn = document.querySelector(".submit-btn");
+      if (allFilled) {
+        submitBtn.classList.add("active");
+      } else {
+        submitBtn.classList.remove("active");
+      }
     });
   });
 

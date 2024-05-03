@@ -19,8 +19,29 @@
   }
   
   /* 스크롤 내렸을 때 블러 효과 적용 */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
-
+  /* 초기 상태 설정 */
+  .header-menu ul ul {
+    opacity: 0;
+    transform: translateY(-20px);
+    display: none;
+  }
+  
+  /* 활성화 상태 설정 */
+  .header-menu ul ul.active {
+    display: block;
+    animation: slideDown 0.3s ease forwards;
+  }
 /* 모바일메뉴 */
 .mbt {
     display: none;
@@ -222,6 +243,31 @@
   z-index: 1;
   line-height: 1.2;
 }
+#hd-menu33{
+  position: absolute;
+  top: 44px;
+  left: -1px;
+  background-color: #80bcbd;
+  border-radius: 35px;
+  width:130px ;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1;
+  line-height: 1.2;
+}
+#hdhd{
+  position: absolute;
+  top: 44px;
+  left: -1px;
+  background-color: #80bcbd;
+  border-radius: 35px;
+  width:130px ;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1;
+  line-height: 1.2;
+}
+
 .hd-menu2 >li{
   text-align: center;
 }
@@ -232,6 +278,9 @@
 .hd-menu3.active{
   display: block !important;
  
+}
+#hd-menu33.active{
+  display:  block !important;
 }
 .hd-menu2 a{
   display: block;
@@ -257,12 +306,17 @@ font-size: 1.2rem;
   background-color: #aad9bb;
  
 }
-.hd-menu2:hover{
-  background-color: #aad9bb;
- 
+.hd-menu2:hover {
+  background-color: #aad9bb; /* .hd-menu2에 호버되었을 때 #hd-menu33에 호버되지 않은 경우에만 적용 */
 }
 
+#hd-menu33:hover {
+  background-color: #aad9bb; /* #hd-menu33에 호버될 때의 스타일 */
+}
 
+#hd-menu33:hover .hd-menu2:hover {
+  background-color: initial;
+}
 .visual-wrap {
   display: flex;
   justify-content: center;

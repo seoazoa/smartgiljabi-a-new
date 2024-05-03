@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>교육봉사등록</title>
+    <title>교육봉사신청내역</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
@@ -52,7 +52,9 @@
     <link rel="stylesheet" href="css/sumin.css" />
     <link rel="stylesheet" href="css/edu_list.css" />
     <link rel="stylesheet" href="css/enrol.css" />
+    <link rel="stylesheet" href="css/enrolchk.css" />
     <link rel="stylesheet" href="css/volunteer_regist.css" />
+    <link rel="stylesheet" href="css/volunteer_regist_chk.css" />
     <!-- 제이쿼리 cdn -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- swiper js cdn -->
@@ -66,16 +68,13 @@
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
-    <script src="js/volunteer_regist.js"></script>
-    <script src="js/main-login.js"></script>
+    <script src="js/volunteer_regist_chk.js"></script>
   </head>
   <body>
     <div class="wrap">
-      <!-- header -->
       <!-- 채은영역 -->
       <div class="header-wrap .scrolled">
         <div class="header">
-          <!-- 모바일메뉴 -->
           <a href="index.html" class="logo">
             <img src="images/main_logo.png" alt="로고" />
           </a>
@@ -103,86 +102,82 @@
             </div>
           </div>
           <div class="header-signup">
-            <div id="login-section">
-              <a href="login.html"><button id="login-button">로그인</button></a>
+            <div id="myroom">
+              <button id="my-room">내정보</button>
             </div>
+            <a href="login.html">
+              <div id="login-section">
+                <a href="login.html">
+                  <button id="login-button">로그인</button>
+                </a>
+              </div>
+            </a>
             <div id="dashboard-section" style="display: none">
               <div id="username-display"></div>
               <button id="logout-button">로그아웃</button>
             </div>
-            <div id="signup-section">
-              <a href="#"><button id="signup-button">회원가입</button></a>
-            </div>
-          </div>
-          <!-- 모바일메뉴 -->
-          <button class="mbt">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="nav-mb">
-            <ul class="nav-mb-gnb">
-              <div class="nav-flex">
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
+            <a href="join.html">
+              <div id="signup-section">
+                <button id="signup-button">회원가입</button>
               </div>
-              <li><a href="#">소개</a></li>
-              <li><a href="#">수강신청</a></li>
-              <li><a href="#">자원봉사신청</a></li>
-              <li><a href="#">교육자료실</a></li>
-              <li><a href="#">역량수준진단</a></li>
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">내정보</a></li>
-            </ul>
+            </a>
           </div>
+        </div>
+        <!-- 모바일메뉴 -->
+        <button class="mbt">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-mb">
+          <ul class="nav-mb-gnb">
+            <div class="nav-flex">
+              <li><a href="#">내정보</a></li>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </div>
+            <li><a href="#">소개</a></li>
+            <li><a href="edu_list.html">수강신청</a></li>
+            <li><a href="volunteer.html">교육봉사신청</a></li>
+            <li><a href="#">교육자료실</a></li>
+            <li><a href="#">역량수준진단</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">내정보</a></li>
+          </ul>
         </div>
       </div>
       <!-- top banner -->
-      <section class="top-banner">
-        <div class="banner-txt">
-          <span class="banner-title">교육봉사자 신청</span>
-          <p class="banner-sub">스마트 세상으로의 한걸음, 스마트 길잡이가 함께합니다.</p>
-        </div>
-      </section>
+      <section class="top-banner" id="top-banner"></section>
       <div class="pg-navi">
         <div class="inner">
           <!-- js data -->
         </div>
       </div>
-      <div class="inner">
-        <h2 class="pg-title">교육봉사자 신청</h2>
-      </div>
-      <!-- regist form -->
-      <form action="#" class="regist-tutor">
+      <!-- 수강신청 확인 영역 -->
+      <section class="enrol-chk">
         <div class="inner">
-          <div class="area-selector">
-            <h2 class="box-title">교육봉사를 희망하시는 지역을 선택해주세요.</h2>
-            <p id="area-selec" class="area-selec">지역선택<i class="fa-solid fa-caret-down"></i></p>
-            <ul class="area-ul" id="data-area-selec">
-              <!-- js 출력 -->
-            </ul>
-            <p id="city-selec" class="area-selec">시/구군 선택<i class="fa-solid fa-caret-down" id="city-carrot"></i></p>
-            <ul class="city-ul" id="data-area-detail">
-              <!-- js 출력 -->
+          <div class="title-box">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M40 7.5C48.6195 7.5 56.886 10.9241 62.981 17.019C69.0759 23.114 72.5 31.3805 72.5 40C72.5 48.6195 69.0759 56.886 62.981 62.981C56.886 69.0759 48.6195 72.5 40 72.5C31.3805 72.5 23.114 69.0759 17.019 62.981C10.9241 56.886 7.5 48.6195 7.5 40C7.5 31.3805 10.9241 23.114 17.019 17.019C23.114 10.9241 31.3805 7.5 40 7.5ZM40 80C50.6087 80 60.7828 75.7857 68.2843 68.2843C75.7857 60.7828 80 50.6087 80 40C80 29.3913 75.7857 19.2172 68.2843 11.7157C60.7828 4.21427 50.6087 0 40 0C29.3913 0 19.2172 4.21427 11.7157 11.7157C4.21427 19.2172 0 29.3913 0 40C0 50.6087 4.21427 60.7828 11.7157 68.2843C19.2172 75.7857 29.3913 80 40 80ZM57.6562 32.6562C59.125 31.1875 59.125 28.8125 57.6562 27.3594C56.1875 25.9063 53.8125 25.8906 52.3594 27.3594L35.0156 44.7031L27.6719 37.3594C26.2031 35.8906 23.8281 35.8906 22.375 37.3594C20.9219 38.8281 20.9062 41.2031 22.375 42.6562L32.375 52.6562C33.8437 54.125 36.2188 54.125 37.6719 52.6562L57.6562 32.6562Z"
+                fill="#80BCBD" />
+            </svg>
+            <h2 class="chk-title">교육봉사자 신청이 완료되었습니다!</h2>
+          </div>
+
+          <div class="enrol-chk-bg">
+            <p class="chk-sub-title">교육봉사신청내역확인</p>
+            <p class="chk-sub-info-title">신청하신 내역을 확인해주세요.</p>
+            <ul class="info-box" id="volunchk-data">
+              <!-- js 데이터 출력 -->
             </ul>
           </div>
-          <!-- 로컬스토리지 데이터 저장 (연락처) -->
-          <div class="user-info-box">
-            <div class="input-bg">
-              <h2 class="box-title">성함과 연락처를 작성해주세요.</h2>
-              <p class="sub-title">안심하세요! 전화번호는 유출되지 않습니다</p>
-              <div class="input-box">
-                <label for="volun-name">성함</label><input type="text" id="volun-name" placeholder="홍길동" />
-                <span class="error-message" id="name-error"></span>
-                <br />
-                <label for="volun-mobile">연락처</label><input type="tel" id="volun-mobile" placeholder="01012345678" />
-                <span class="error-message" id="mobile-error"></span>
-              </div>
-            </div>
-            <button id="volun_btn" class="submit-btn" type="submit">교육봉사신청하기</button>
+          <div class="btn-box">
+            <button class="chk-btn" id="cancel-btn">취소하기</button>
+            <button class="chk-btn" id="back-btn">확인</button>
           </div>
         </div>
-      </form>
+      </section>
       <!-- 하단 footer 영역 -->
       <footer class="footer">
         <a href="#" class="youtube-logo">

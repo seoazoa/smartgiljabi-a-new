@@ -2,16 +2,23 @@
 <html lang="ko">
   <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WRTSVQHH');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WRTSVQHH");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>스마트길잡이</title>
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -84,9 +91,8 @@
   </head>
   <body id="txtbox">
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTSVQHH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTSVQHH" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- 탑버튼 -->
     <div class="sidebtn">
       <div class="hangulbtn">
@@ -112,7 +118,7 @@
               <ul>
                 <li><a href="brand.html">소개</a></li>
                 <li class="hd-menu1">
-                  <a href="">수강신청</a>
+                  <a href="edu_list.html">수강신청</a>
                   <ul class="hd-menu2">
                     <li><a href="edu_list.html">교육과정찾기</a></li>
                   </ul>
@@ -120,11 +126,12 @@
                 <li id="volunteer-apply">
                   <a href="">교육봉사신청</a>
                   <ul class="hd-menu3">
-                    <li><a href="volunteer.html">교육봉사등록</a></li>
+                    <li id="hdhd"><a href="volunteer.html">교육봉사등록</a></li>
+                    <li id="hd-menu33"><a href="volunteer.html">교육봉사소개</a></li>
                   </ul>
                 </li>
                 <li><a href="gesipan.html">교육자료실</a></li>
-                <li><a href="">역량수준진단</a></li>
+                <li><a href="level.html">역량수준진단</a></li>
                 <li><a href="callct.html">고객센터</a></li>
               </ul>
             </div>
@@ -138,60 +145,62 @@
                 <a href="login.html"><button id="login-button">로그인</button></a>
               </div>
             </a>
-              <div id="dashboard-section" style="display: none">
-                <div id="username-display"></div>
-                <button id="logout-button">로그아웃</button>
-              </div>
-              <a href="join.html">
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+            <a href="join.html">
               <div id="signup-section">
                 <button id="signup-button">회원가입</button>
               </div>
             </a>
-            </div>
           </div>
-          <!-- 모바일메뉴 -->
-          <button class="mbt">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="nav-mb">
-            <ul class="nav-mb-gnb">
-              <div class="nav-flex">
-                <li><a href="#">내정보</a></li>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                
-              </div>
-              <li><a href="#">소개</a></li>
-              <li><a href="#">수강신청</a></li>
-              <li><a href="#">교육봉사신청</a></li>
-              <li><a href="#">교육자료실</a></li>
-              <li><a href="#">역량수준진단</a></li>
-              <li><a href="#">고객센터</a></li>
+        </div>
+        <!-- 모바일메뉴 -->
+        <button class="mbt">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-mb">
+          <ul class="nav-mb-gnb">
+            <div class="nav-flex">
               <li><a href="#">내정보</a></li>
-            </ul>
-          </div>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="join.html">회원가입</a></li>
+            </div>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">수강신청</a></li>
+            <li><a href="#">교육봉사신청</a></li>
+            <li><a href="gesipan.html">교육자료실</a></li>
+            <li><a href="#">역량수준진단</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">내정보</a></li>
+          </ul>
         </div>
       </div>
       <section class="visual-wrap">
         <div class="video0wrap">
-        <video class="vs-video" src="images/vvi.mp4" controls autoplay muted ></video>
+          <video class="vs-video" src="images/vvi.mp4" controls autoplay muted></video>
         </div>
         <div class="visual-button">
           <a href="edu_list.html"><button class="sugang">수강신청</button></a>
           <a href=""><button class="bongsa">교육봉사등록</button></a>
-          <a href=""><button class="callcenter">
+          <a href=""
+            ><button class="callcenter">
               <img src="images/call2.png" alt="콜센터이미지" id="callimg" />
-              <img src="images/phonepng.png" alt="콜센터이미지" id="callimg2">고객센터</button></a>
-          <a href=""><button class="qna">Q&A
-            <img src="images/poong.png" alt="phone" id="phone1">
-            <img src="images/poong2.png" alt="phone1" id="phone2">
-          </button></a>
+              <img src="images/phonepng.png" alt="콜센터이미지" id="callimg2" />고객센터
+            </button></a
+          >
+          <a href=""
+            ><button class="qna">
+              Q&A
+              <img src="images/poong.png" alt="phone" id="phone1" />
+              <img src="images/poong2.png" alt="phone1" id="phone2" /></button
+          ></a>
         </div>
-        
       </section>
-      
+
       <!-- 서아영역 -->
       <section class="shortcut">
         <div class="inner">
@@ -209,7 +218,6 @@
               <img class="shortbtnimg" src="images/shortcut/giljab.png" alt="학습자 길잡이" />
               <img class="shortbg" src="images/shortcut/bg2.png" alt="배경" />
             </li>
-
             <li class="shortcutbtnli">
               <div class="shortcontents">
                 <p class="shortbtnti">키오스크, 스마트기기, 앱 체험</p>
@@ -221,7 +229,6 @@
               <img class="shortbtnimg" src="images/shortcut/kiosk.png" alt="키오스크" />
               <img class="shortbg" src="images/shortcut/bg2.png" alt="배경" />
             </li>
-
             <li class="shortcutbtnli">
               <div class="shortcontents">
                 <p class="shortbtnti">교육과정 찾기</p>
@@ -233,7 +240,6 @@
               <img class="shortbtnimg" src="images/shortcut/gyouk.png" alt="교육과정 찾기" />
               <img class="shortbg" src="images/shortcut/bg2.png" alt="배경" />
             </li>
-
             <li class="shortcutbtnli">
               <div class="shortcontents">
                 <p class="shortbtnti">배움터 찾기</p>
@@ -245,7 +251,6 @@
               <img class="shortbtnimg" src="images/shortcut/baeum.png" alt="배움터 찾기" />
               <img class="shortbg" src="images/shortcut/bg2.png" alt="배경" />
             </li>
-
             <li class="shortcutbtnli">
               <div class="shortcontents">
                 <p class="shortbtnti">자원봉사, 강사/서포터즈 신청하기</p>
@@ -279,26 +284,30 @@
           <p class="card">* 카드를 클릭하면 자세한 정보 확인이 가능합니다.</p>
           <ul class="chucheon">
             <li>
-              <img src="images/recommend/kiosk0.png" alt="무인결제대" id="changeableImage" class="image-size" />
-              <div class="gangbox">
-                <div class="subtit">
-                  <span class="offline">오프라인</span>
-                  <span class="gangboxtit">디지털로 신 세대 따라잡기</span>
-                </div>
-                <p class="ksas">무인 결제대(키오스크) 사용하기</p>
-                <p class="ksas2">상점이나 물건 구매를 할 때, 결제수단을 원활하게 사용하기 위한 무인 결제대(키오스크) 사용법을 알려줍니다.</p>
-              </div>
+              <a href="edu_list.html">
+                <img src="images/recommend/kiosk0.png" alt="무인결제대" id="changeableImage" class="image-size" />
+                <div class="gangbox">
+                  <div class="subtit">
+                    <span class="offline">오프라인</span>
+                    <span class="gangboxtit">디지털로 신 세대 따라잡기</span>
+                  </div>
+                  <p class="ksas">무인 결제대(키오스크) 사용하기</p>
+                  <p class="ksas2">상점이나 물건 구매를 할 때, 결제수단을 원활하게 사용하기 위한 무인 결제대(키오스크) 사용법을 알려줍니다.</p>
+                </div></a
+              >
             </li>
             <li>
-              <img src="images/recommend/app0.png" alt="앱사용" id="changeableImage2" class="image-size" />
-              <div class="gangbox">
-                <div class="subtit">
-                  <span class="offline">오프라인</span>
-                  <span class="gangboxtit">디지털로 신 세대 따라잡기</span>
-                </div>
-                <p class="ksas">생활 편의를 위한 앱 사용하기</p>
-                <p class="ksas2">생활 편의를 위한 앱 사용법, 교통 앱 이용 방법 등을 알려줍니다.</p>
-              </div>
+              <a href="edu_list.html">
+                <img src="images/recommend/app0.png" alt="앱사용" id="changeableImage2" class="image-size" />
+                <div class="gangbox">
+                  <div class="subtit">
+                    <span class="offline">오프라인</span>
+                    <span class="gangboxtit">디지털로 신 세대 따라잡기</span>
+                  </div>
+                  <p class="ksas">생활 편의를 위한 앱 사용하기</p>
+                  <p class="ksas2">생활 편의를 위한 앱 사용법, 교통 앱 이용 방법 등을 알려줍니다.</p>
+                </div></a
+              >
             </li>
             <li>
               <a href="gesipan.html">
@@ -319,16 +328,16 @@
             </div>
             <li>
               <a href="gesipan.html">
-              <img src="images/recommend/smartphone0.png" alt="스마트폰" id="changeableImage4" class="image-size" />
-              <div class="gangbox">
-                <div class="subtit">
-                  <span class="online">온라인</span>
-                  <span class="gangboxtit">함께하는 스마트 세상</span>
+                <img src="images/recommend/smartphone0.png" alt="스마트폰" id="changeableImage4" class="image-size" />
+                <div class="gangbox">
+                  <div class="subtit">
+                    <span class="online">온라인</span>
+                    <span class="gangboxtit">함께하는 스마트 세상</span>
+                  </div>
+                  <p class="ksas">스마트폰 활용 교육</p>
+                  <p class="ksas2">IT기술을 소외됨 없이 누릴 수 있게 돕는 안드로이드 스마트폰 교육입니다.</p>
                 </div>
-                <p class="ksas">스마트폰 활용 교육</p>
-                <p class="ksas2">IT기술을 소외됨 없이 누릴 수 있게 돕는 안드로이드 스마트폰 교육입니다.</p>
-              </div>
-            </a>
+              </a>
             </li>
           </ul>
           <ul class="btnmore">

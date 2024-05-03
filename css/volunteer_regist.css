@@ -20,6 +20,7 @@
   font-size: 2.375rem;
   border-radius: 25px;
   border: 2px solid #80bcbd;
+  background-color: #fff;
   padding: 15px 0;
   margin: 6% auto 0;
   cursor: pointer;
@@ -31,15 +32,38 @@
   transform: translateY(-50%);
   font-size: 2rem;
 }
-.area-ul {
+.area-ul,
+.city-ul {
   width: 60%;
-  height: 100%;
-  padding: 35px;
+  height: 23vw;
+  padding: 23px 35px 0;
   margin: 5px auto 0;
   border-radius: 35px;
-  background-color: aliceblue;
+  border: 1px solid #ececec;
+  box-shadow: 0px 1px 90px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+  display: none;
 }
-.area-ul li {
+.area-ul.show,
+.city-ul.show {
+  display: block;
+}
+/* 스크롤바의 폭 너비 */
+.area-ul::-webkit-scrollbar, .city-ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.area-ul::-webkit-scrollbar-thumb, .city-ul::-webkit-scrollbar-thumb {
+  background: #80bcbd; /* 스크롤바 색상 */
+  border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+.area-ul::-webkit-scrollbar-track, .city-ul::-webkit-scrollbar-track {
+  background: #ececec; /*스크롤바 뒷 배경 색상*/
+}
+.area-ul li,
+.city-ul li {
   font-size: 2.375rem;
-  line-height: 2;
+  line-height: 2.3;
+  cursor: pointer;
 }
