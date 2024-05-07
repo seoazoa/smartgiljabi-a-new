@@ -3,6 +3,7 @@
 @import url(all.css);
 @import url(cheun.css);
 @import url(sumin.css);
+
 .top-banner {
   position: relative;
   width: 100%;
@@ -37,19 +38,7 @@
   padding-top: 30px;
 }
 /* 헤더 부메뉴 수정 */
-.hd-menu3 {
-    display: none;
-    position: absolute;
-    top: 32px;
-    left:-10px;
-    background-color: #80bcbd;
-    border-radius: 35px;
-    width:130px ;
-    text-align: center;
-    padding: 20px 0;
-    z-index: 1;
-    line-height: 1.2;
-  }
+
   /* 브랜드 소개 */
   .esta-wrap{
     display: flex;

@@ -116,11 +116,11 @@
 #cancel-btn {
   padding: 12px 0;
   width: calc(100% / 2 - 75px);
-  border: 2px solid #80bcbd;
+  box-shadow: 0 0 0 2px #80bcbd inset;
+  border: 0;
   background-color: #fff;
   border-radius: 23px;
-  font-size: 38px;
-  line-height: 45px;
+  font-size: 2.375rem;
   color: #80bcbd;
   text-align: center;
   cursor: pointer;
@@ -131,8 +131,119 @@
   background: #80bcbd;
   border-radius: 23px;
   border: 0;
-  font-size: 38px;
+  font-size: 2.375rem;
   color: #ffffff;
   text-align: center;
   cursor: pointer;
+}
+@media screen and (max-width: 1680px) {
+  .pg-navi {
+    margin-top: 12%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .pg-navi {
+    margin-top: 14%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .pg-navi {
+    margin-top: 19%;
+  }
+  .chk-info-detail {
+    margin: 0 0 0 8%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pg-navi {
+    margin-top: 22%;
+  }
+  .info-box-li {
+    width: 100%;
+  }
+  .chk-info-detail {
+    margin: 0;
+    word-break: keep-all;
+  }
+}
+@media screen and (max-width: 440px) {
+  .pg-navi {
+    margin-top: 25%;
+  }
+  .enrol-chk .inner {
+    padding-top: 0;
+  }
+  .title-box {
+    gap: 20px;
+  }
+  .chk-title {
+    font-size: 2rem;
+  }
+  .chk-sub-title {
+    font-size: 1.9rem;
+  }
+  .enrol-chk svg {
+    width: 25px;
+    height: 25px;
+  }
+  .chk-sub-info-title {
+    font-size: 1.43rem;
+  }
+  .chk-info-title {
+    font-size: 1.6rem;
+  }
+  .chk-info-data {
+    font-size: 1.6rem;
+  }
+  .enrol-chk-bg {
+    padding: 35px;
+  }
+  .info-box-li {
+    padding-bottom: 8%;
+  }
+  .chk-info-detail {
+    line-height: 1.24;
+    font-size: 1.32rem;
+  }
+  .chk-info-detail {
+    padding-bottom: 15px;
+  }
+  .btn-box {
+    gap: 15px;
+  }
+  #cancel-btn,
+  #back-btn {
+    width: calc(100% / 2 - 15px);
+    font-size: 1.7rem;
+    padding: 9px 0;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .pg-navi {
+    margin-top: 35%;
+  }
+
+  .info-box-li {
+    padding-bottom: 12%;
+  }
+  #lecture-info{
+    text-align: right;
+    word-break: keep-all;
+    line-height: 1.24;
+    width: 65%;
+  }
+  .enrol-chk-bg {
+    padding: 25px;
+  }
+  .info-box-last {
+    padding-top: 12%;
+  }
+  .chk-info-detail {
+    font-size: 1.58rem;
+  }
+  #cancel-btn,
+  #back-btn {
+    padding: 9px 0;
+  }
 }

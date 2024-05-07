@@ -49,17 +49,20 @@
   background-color: #fff;
 }
 .log-left{
-  padding:0;
+  padding-right: 3%;
 }
 #signUp-Id, #signUp-Pwd {
     font-family: "Pretendard-Regular";
-    padding: 4% 15% 4% 4%;
+    width: 78%;
+    padding: 5% 0 5% 2%;
     border: 0.5px solid #959595;
     font-size: 1.1rem;
 }
 #double_Check_Btn{
     font-family: "Pretendard-Regular";
-    padding: 4%;
+    font-size:1.1rem;
+    padding: 5% 0%;
+    width: 20%;
     font-weight: bold;
     color: #fff;
     background-color: #80bcbd;
@@ -70,9 +73,9 @@
   background-color: #679899;
 }
 #login_Btn{
-  width: 395px;
+  width: 95%;
     font-family: "Pretendard-Regular";
-    padding: 2% 1%;
+    padding: 2% 0%;
     border: none;
     background-color: #AAD9BB;
     color: #333;
@@ -87,8 +90,9 @@
     background-color: #679899;
 }
 #signUp_Btn{
+  width: 95%;
     font-family: "Pretendard-Regular";
-    padding: 4% 40.6%;
+    padding: 4% 0%;
     border: none;
     background-color: #80bcbd;
     color: #fff;
@@ -98,4 +102,321 @@
 }
 .banner1{
   margin-top: 2%;
+}
+/* ================================= */
+@media screen and (max-width: 1400px) {
+  .log-left {
+    padding-right: 3%;
+}
+#btnlogin, #signUp_Btn {
+  width: 100%;
+}
+#login_Btn {
+  width: 100%;
+}
+}
+@media screen and (max-width: 992px) {
+  html{
+    font-size: 12px;
+  }
+  .log-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-right: 6.5%;
+}
+}
+@media screen and (max-width: 961px) {
+  html{
+    font-size: 11px;
+  }
+  .log-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-right: 6.5%;
+}
+}
+@media screen and (max-width: 912px) {
+  .inner{
+    padding: 0 2%;
+  }
+  html{
+    font-size: 13px;
+  }
+  .log-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-right: 7.5%;
+}
+#signUp_Btn {
+  margin: 5% 0% 0 0;
+}
+.witch{
+  display:none;
+}
+.login-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 5%;
+  /* background-color: blue; */
+}
+.login-menu {
+  margin: 3% 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.login-menu ul{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+.login-menu > ul > li{
+  text-align: center;
+  display: block;
+  padding: 2%;
+  width: calc(100% / 6);
+  font-size: 1rem;
+}
+.login-menu > ul > li::after{
+  display:none;
+}
+.login-con {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.login-menu > ul > li:first-child{
+  display:none;
+}
+}
+@media screen and (max-width: 895px) {
+  .login-menu > ul > li{
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 814px) {
+  html{
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 804px) {
+  .login-menu > ul > li{
+    font-size: 0.9rem;
+  }
+  html{
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .join-cont {
+    font-size: 1.1rem;
+}
+}
+@media screen and (max-width: 704px) {
+  .log-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-right: 5.5%;
+}
+}
+@media screen and (max-width: 688px) {
+  html{
+    font-size: 10px;
+  } 
+  .log-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-right: 5.5%;
+  }
+  #btnlogin{
+  margin: 5% 0 0 0;
+  padding: 2% 2%;
+  cursor: pointer;
+  }
+}
+@media screen and (max-width: 626px) {
+  input[type="checkbox"] {
+    display: inline-block;
+    width:10px;
+    height: 10px;
+}
+.checkbox > span {
+  font-size: 13px;
+  padding-left: 1%;
+}
+.log-left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding-right: 4.5%;
+}
+html{
+  font-size: 9px;
+} 
+#btnlogin, #signUp_Btn{
+  font-size: 9px;
+}
+.log-left {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  padding-right: 7.5%;
+}
+}
+@media screen and (max-width: 563px) {
+  html{
+    font-size: 8px;
+  } 
+}
+@media screen and (max-width: 555px) {
+  #signUp-Id, #signUp-Pwd {
+    font-family: "Pretendard-Regular";
+    width: 75%;
+    padding: 5% 0 5% 2%;
+    border: 0.5px solid #959595;
+    font-size: 1.1rem;
+}
+}
+@media screen and (max-width: 500px) {
+  .login-menu > ul > li {
+    width: calc(100% / 3);
+    padding: 5%;
+    font-size: 1.4rem;
+}
+.login-text {
+  font-family: "GangwonEduPowerExtraBoldA";
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+  .boancont {
+    width: 70%;
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: bold;
+}
+.log-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  border: 0.5px solid #959595;
+  padding: 7% 7%;
+}
+.snslogin img {
+  display: block;
+  max-width: 105%;
+  object-fit: contain;
+  padding-top: 4.5%;
+}
+.checkbox > span {
+  font-size: 10px;
+  padding-left: 1%;
+}
+.yes > span {
+  font-size: 1rem;
+}
+#btn2 {
+font-size: 1rem;
+}
+#btn1{
+font-size: 1rem;
+}
+.yakghan{
+font-size: 1.2rem;
+}
+}
+@media screen and (max-width: 454px) {
+  html{
+    font-size: 7px;
+  } 
+}
+@media screen and (max-width: 420px) {
+  html{
+    font-size: 7px;
+  } 
+}
+@media screen and (max-width: 397px) {
+  #double_Check_Btn {
+    font-family: "Pretendard-Regular";
+    font-size: 1rem;
+    padding: 5% 0%;
+    width: 20%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #80bcbd;
+    cursor: pointer;
+    border: none;
+}
+}
+@media screen and (max-width: 380px) {
+  .log-left {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding-right: 3.5%;
+}
+}
+@media screen and (max-width: 373px) {
+  html{
+    font-size: 6px;
+  } 
+}
+@media screen and (max-width: 365px) {
+  html{
+    font-size: 6px;
+  } 
+  .login-menu > ul > li {
+    width: calc(100% / 3);
+    padding: 5%;
+    font-size: 1.3rem;
+}
+.boancont {
+  width: 70%;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+#btnlogin, #signUp_Btn {
+  font-size: 1.1rem;
+}
+#login-Id, #login-Pwd {
+  font-family: "Pretendard-Regular";
+  padding: 4% 15% 4% 4%;
+  border: 0.5px solid #959595;
+  font-size: 1.1rem;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+}
+.checkbox > span {
+  font-size: 1rem;
+  padding-left: 1%;
+}
+}
+@media screen and (max-width: 320px) {
+  html{
+    font-size: 5px;
+  }
+  .yes > span {
+    font-size: 1rem;
+}
+#btn2 {
+  font-size: 1rem;
+}
+#btn1{
+  font-size: 1rem;
+}
+.yakghan{
+  font-size: 1.2rem;
+}
 }

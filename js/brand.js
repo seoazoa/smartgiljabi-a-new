@@ -1,52 +1,70 @@
 window.addEventListener("load", function() {
-    window.addEventListener('scroll', function() {
-      var headerWrap = document.querySelector('.header-wrap');
-      if (window.scrollY > 0) {
-        headerWrap.classList.add('scrolled'); // ½ºÅ©·ÑµÈ °æ¿ì scrolled Å¬·¡½º Ãß°¡
-      } else {
-        headerWrap.classList.remove('scrolled'); // ½ºÅ©·ÑÀÌ »ó´Ü¿¡ À§Ä¡ÇÑ °æ¿ì scrolled Å¬·¡½º Á¦°Å
-      }
-    });
+  window.addEventListener('scroll', function() {
+    var headerWrap = document.querySelector('.header-wrap');
+    if (window.scrollY > 0) {
+      headerWrap.classList.add('scrolled'); // ìŠ¤í¬ë¡¤ëœ ê²½ìš° scrolled í´ëž˜ìŠ¤ ì¶”ê°€
+    } else {
+      headerWrap.classList.remove('scrolled'); // ìŠ¤í¬ë¡¤ì´ ìƒë‹¨ì— ìœ„ì¹˜í•œ ê²½ìš° scrolled í´ëž˜ìŠ¤ ì œê±°
+    }
+  });
+
+  // ë°˜ì‘í˜• (1024px) í–„ë²„ê±°ë°”ê°€ ìƒê²¼ì„ë•Œ
+  // í–„ë²„ê±°ë²„íŠ¼ì„ í´ë¦­í–ˆì„ë•Œ
+  const navMb = document.querySelector(".nav-mb");
+  const htmlRoot = document.querySelector("html");
+  const mbt = document.querySelector(".mbt");
+
+  mbt.addEventListener("click", function() {
+    const state = this.classList.contains("ani");
+    if (state) {
+      // í–„ë²„ê±° ë²„íŠ¼ì„  ëˆŒë €ì„ë•Œ xê°€ ë°”ë€ŒëŠ” ì½”ë“œ
+      this.classList.remove("ani");
+      // ëª¨ë°”ì¼ì— ë©”ë‰´ê°€ ë‚˜íƒ€ë‚˜ëŠ” ì½”ë“œ
+      navMb.classList.remove("active");
+      // ìŠ¤í¬ë¡¤ì´ ì•ˆìƒê¸°ê²Œ í•˜ëŠ” ì½”ë“œ
+      htmlRoot.classList.remove("active");
+    } else {
+      // í–„ë²„ê±° ë²„íŠ¼ì„  ëˆŒë €ì„ë•Œ xê°€ ë°”ë€ŒëŠ” ì½”ë“œ
+      this.classList.add("ani");
+      // ëª¨ë°”ì¼ì— ë©”ë‰´ê°€ ë‚˜íƒ€ë‚˜ëŠ” ì½”ë“œ
+      navMb.classList.add("active");
+      // ìŠ¤í¬ë¡¤ì´ ì•ˆìƒê¸°ê²Œ í•˜ëŠ” ì½”ë“œ
+      htmlRoot.classList.add("active");
+    }
+  });
+//   var menu1 = document.querySelector('.hd-menu1 > a');
+// var menu2 = document.querySelector('.hd-menu2');
+// menu1.addEventListener("click" ,function(e){
+//   e.preventDefault()
+//   menu2.classList.toggle("active")
   
-    // ¹ÝÀÀÇü (1024px) ÇÜ¹ö°Å¹Ù°¡ »ý°åÀ»¶§
-    // ÇÜ¹ö°Å¹öÆ°À» Å¬¸¯ÇßÀ»¶§
-    const navMb = document.querySelector(".nav-mb");
-    const htmlRoot = document.querySelector("html");
-    const mbt = document.querySelector(".mbt");
+// })
+//   var menu3 = document.querySelector('#volunteer-apply > a');
+// var menu4 = document.querySelector('.hd-menu3');
+// menu3.addEventListener("click" ,function(e){
+//   e.preventDefault()
+//   menu4.classList.toggle("active")
   
-    mbt.addEventListener("click", function() {
-      const state = this.classList.contains("ani");
-      if (state) {
-        // ÇÜ¹ö°Å ¹öÆ°À»  ´­·¶À»¶§ x°¡ ¹Ù²î´Â ÄÚµå
-        this.classList.remove("ani");
-        // ¸ð¹ÙÀÏ¿¡ ¸Þ´º°¡ ³ªÅ¸³ª´Â ÄÚµå
-        navMb.classList.remove("active");
-        // ½ºÅ©·ÑÀÌ ¾È»ý±â°Ô ÇÏ´Â ÄÚµå
-        htmlRoot.classList.remove("active");
-      } else {
-        // ÇÜ¹ö°Å ¹öÆ°À»  ´­·¶À»¶§ x°¡ ¹Ù²î´Â ÄÚµå
-        this.classList.add("ani");
-        // ¸ð¹ÙÀÏ¿¡ ¸Þ´º°¡ ³ªÅ¸³ª´Â ÄÚµå
-        navMb.classList.add("active");
-        // ½ºÅ©·ÑÀÌ ¾È»ý±â°Ô ÇÏ´Â ÄÚµå
-        htmlRoot.classList.add("active");
-      }
-    });
-    var menu1 = document.querySelector('.hd-menu1 > a');
-  var menu2 = document.querySelector('.hd-menu2');
-  menu1.addEventListener("click" ,function(e){
-    e.preventDefault()
-    menu2.classList.toggle("active")
-    
-  })
-  var menu3 = document.querySelector('#volunteer-apply > a');
-  var menu4 = document.querySelector('.hd-menu3');
-  menu3.addEventListener("click" ,function(e){
-    e.preventDefault()
-    menu4.classList.toggle("active")
-    
-  })
-  const pgNaviContainer = document.querySelector(".pg-navi .inner");
+// })
+var menu1 = document.querySelector('.hd-menu1 > a');
+var menu2 = document.querySelector('.hd-menu2');
+var menu3 = document.querySelector('#volunteer-apply > a');
+var menu4 = document.querySelector('.hd-menu3');
+
+menu1.addEventListener("click", function(e) {
+  e.preventDefault();
+  menu2.classList.toggle("active")
+  // menu2.classList.add("active");
+  menu4.classList.remove("active");
+});
+
+menu3.addEventListener("click", function(e) {
+  e.preventDefault();
+  menu2.classList.remove("active");
+  menu4.classList.toggle("active")
+  // menu4.classList.add("active");
+});
+const pgNaviContainer = document.querySelector(".pg-navi .inner");
   const nowPg = document.title;
 
   function renderPgNavi() {
@@ -61,4 +79,4 @@ window.addEventListener("load", function() {
   }
 
   renderPgNavi();
-  });
+});

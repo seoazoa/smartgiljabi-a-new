@@ -44,16 +44,16 @@
   }
 /* 모바일메뉴 */
 .mbt {
-    display: none;
-    position: absolute;
-    top: 40%;
-    right: 58px;
-    width: 40px;
-    height: 30px;
-    background-color: transparent;
-    /* font-size: 0; */
-    border: 0;
-    cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 40%;
+  right: 60px;
+  width: 42px;
+  height: 30px;
+  background-color: transparent;
+  /* font-size: 0; */
+  border: 0;
+  cursor: pointer;
   }
   .mbt.active span {
     background-color: #222;
@@ -230,7 +230,7 @@
   z-index: 1;
   line-height: 1.2;
 }
-.hd-menu3{
+/* .hd-menu3{
   display: none;
   position: absolute;
   top: 32px;
@@ -242,14 +242,14 @@
   padding: 20px 0;
   z-index: 1;
   line-height: 1.2;
-}
+} */
 #hd-menu33{
   position: absolute;
-  top: 44px;
-  left: -1px;
+  top: 13px;
+  left: 55px;
   background-color: #80bcbd;
   border-radius: 35px;
-  width:130px ;
+  width: 130px;
   text-align: center;
   padding: 20px 0;
   z-index: 1;
@@ -257,15 +257,15 @@
 }
 #hdhd{
   position: absolute;
-  top: 44px;
-  left: -1px;
-  background-color: #80bcbd;
-  border-radius: 35px;
-  width:130px ;
-  text-align: center;
-  padding: 20px 0;
-  z-index: 1;
-  line-height: 1.2;
+    top: 13px;
+    left: -84px;
+    background-color: #80bcbd;
+    border-radius: 35px;
+    width: 130px;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1;
+    line-height: 1.2;
 }
 
 .hd-menu2 >li{
@@ -303,6 +303,10 @@ font-size: 1.2rem;
 
 }
 .hd-menu3:hover{
+  background-color: #aad9bb;
+ 
+}
+#hdhd:hover{
   background-color: #aad9bb;
  
 }
@@ -765,10 +769,10 @@ margin-top: 6%;
   }
 
   .mbt {
-    
+        position: absolute;
     top: 40%;
-    right: 20px;
-    width: 40px;
+    right: 60px;
+    width: 42px;
     height: 30px;
     background-color: transparent;
     /* font-size: 0; */
@@ -1033,7 +1037,7 @@ margin-top: 2%;
 
  }
  @media screen and (max-width: 392px){
-  #sg-1{
+  #sgsg{
     border-bottom: none;
   }
   .nav-flex{
@@ -1128,13 +1132,17 @@ flex-direction: column;
     border-top: 1px solid #e5e5e5;
     align-items: flex-start;
 }
-  .mbt {  position: absolute;
-    top: 36%;
-    right: 20px;
-    width: 30px;
-    height: 25px;
+.mbt {  position: absolute;
+  top: 40%;
+  right: 20px;
+  width: 35px;
+  height: 25px;
+  background-color: transparent;
+  /* font-size: 0; */
+  border: 0;
+  cursor: pointer;
+}
 
-  }
   .logo {
     position: relative;
     display: block;

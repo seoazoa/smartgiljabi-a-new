@@ -93,21 +93,51 @@ document.addEventListener("scroll", function () {
   }
 });
 // ================================================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   // 모든 span 요소에 대한 클릭 이벤트 리스너를 추가합니다.
-  document.querySelectorAll('.allmenu li span').forEach(item => {
-    item.addEventListener('click', function() {
+  document.querySelectorAll(".allmenu li span").forEach((item) => {
+    item.addEventListener("click", function () {
       // 클릭한 span에만 active 클래스를 추가하고, 나머지는 active 클래스를 제거합니다.
-      document.querySelectorAll('.allmenu li span').forEach(span => {
-        span.classList.remove('active');
+      document.querySelectorAll(".allmenu li span").forEach((span) => {
+        span.classList.remove("active");
       });
-      item.classList.add('active');
+      item.classList.add("active");
     });
   });
 });
 // 이동 ==============================================
-$(document).ready(function() {
-  $('.chucheon li:nth-child(3)').click(function() {
-    window.location.href = 'gesipan.html';
+$(document).ready(function () {
+  $(".chucheon li:nth-child(3)").click(function () {
+    window.location.href = "gesipan.html";
+  });
+});
+$(document).ready(function () {
+  $(".shortcutbtnli:nth-child(1)").click(function () {
+    window.location.href = "edu_list.html";
+  });
+});
+$(document).ready(function () {
+  $(".shortcutbtnli:nth-child(2)").click(function () {
+    window.location.href = "edu_list.html";
+  });
+});
+$(document).ready(function () {
+  $(".shortcutbtnli:nth-child(3)").click(function () {
+    window.location.href = "edu_list.html";
+  });
+});
+$(document).ready(function () {
+  $(".shortcutbtnli:nth-child(4)").click(function () {
+    window.location.href = "edu_list.html";
+  });
+});
+$(document).ready(function () {
+  $(".shortcutbtnli:nth-child(5)").click(function () {
+    window.location.href = "volunteer_regist.html";
+  });
+});
+$(document).ready(function () {
+  $(".shortcutbtnli:nth-child(6)").click(function () {
+    window.location.href = "level.html";
   });
 });

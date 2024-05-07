@@ -1,50 +1,4 @@
 window.addEventListener("load", function () {
-  window.addEventListener("scroll", function () {
-    var headerWrap = document.querySelector(".header-wrap");
-    if (window.scrollY > 0) {
-      headerWrap.classList.add("scrolled"); // 스크롤된 경우 scrolled 클래스 추가
-    } else {
-      headerWrap.classList.remove("scrolled"); // 스크롤이 상단에 위치한 경우 scrolled 클래스 제거
-    }
-  });
-
-  // 반응형 (1024px) 햄버거바가 생겼을때
-  // 햄버거버튼을 클릭했을때
-  const navMb = document.querySelector(".nav-mb");
-  const htmlRoot = document.querySelector("html");
-  const mbt = document.querySelector(".mbt");
-
-  mbt.addEventListener("click", function () {
-    const state = this.classList.contains("ani");
-    if (state) {
-      // 햄버거 버튼을  눌렀을때 x가 바뀌는 코드
-      this.classList.remove("ani");
-      // 모바일에 메뉴가 나타나는 코드
-      navMb.classList.remove("active");
-      // 스크롤이 안생기게 하는 코드
-      htmlRoot.classList.remove("active");
-    } else {
-      // 햄버거 버튼을  눌렀을때 x가 바뀌는 코드
-      this.classList.add("ani");
-      // 모바일에 메뉴가 나타나는 코드
-      navMb.classList.add("active");
-      // 스크롤이 안생기게 하는 코드
-      htmlRoot.classList.add("active");
-    }
-  });
-  var menu1 = document.querySelector(".hd-menu1 > a");
-  var menu2 = document.querySelector(".hd-menu2");
-  menu1.addEventListener("click", function (e) {
-    e.preventDefault();
-    menu2.classList.toggle("active");
-  });
-  var menu3 = document.querySelector("#volunteer-apply > a");
-  var menu4 = document.querySelector(".hd-menu3");
-  menu3.addEventListener("click", function (e) {
-    e.preventDefault();
-    menu4.classList.toggle("active");
-  });
-
   // 페이지 내비게이션 렌더링
   const pgNaviContainer = document.querySelector(".pg-navi .inner");
   const nowPg = document.title;
@@ -345,7 +299,11 @@ window.addEventListener("load", function () {
 
       // 중복된 값을 방지하기 위해 이미 저장된 데이터와 비교합니다.
       const isDuplicate = storedData.some((item) => {
-        return item.dataValue === newData.dataValue && item.areaValue === newData.areaValue && item.centerValue === newData.centerValue;
+        return (
+          item.dataValue === newData.dataValue &&
+          item.areaValue === newData.areaValue &&
+          item.centerValue === newData.centerValue
+        );
       });
 
       // 중복된 값이 아닌 경우에만 데이터를 저장합니다.
@@ -353,6 +311,22 @@ window.addEventListener("load", function () {
         storedData.push(newData);
         localStorage.setItem("clickedValues", JSON.stringify(storedData));
       }
+    }
+  });
+  const closeAreaToggle = document.querySelector(".area-modal-close");
+  const mobilePopup = document.querySelector(".mobile-popup");
+  const body = document.body;
+
+  // 해상도가 940px 이하일 때만 스크롤 막기
+  if (window.innerWidth <= 940) {
+    body.style.overflow = "hidden"; // 스크롤 막기
+  }
+
+  closeAreaToggle.addEventListener("click", function () {
+    mobilePopup.style.display = "none";
+    // 해상도가 940px 이하일 때만 스크롤 다시 활성화
+    if (window.innerWidth <= 940) {
+      body.style.overflow = "auto"; // 스크롤 다시 활성화
     }
   });
 });

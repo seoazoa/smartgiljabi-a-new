@@ -67,3 +67,32 @@
   line-height: 2.3;
   cursor: pointer;
 }
+@media screen and (max-width: 440px){
+  .regist-tutor .inner{
+    padding-top: 0;
+  }
+  .area-selector .box-title{
+    word-break: keep-all;
+    margin-bottom: 10%;
+    font-size: 2rem;
+  }
+  .area-selector{
+    padding: 8% 10px;
+  }
+  .area-selec{
+    width: 86%;
+  }
+  .area-ul, .city-ul{
+    width: 86%;
+    padding-top: 5px;
+  }
+  .submit-btn{
+    width: 56vw;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 360px){
+  .submit-btn{
+    width: 56vw;
+  }
+}

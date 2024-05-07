@@ -36,20 +36,7 @@
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     padding-top: 30px;
   }
-  /* 헤더 부메뉴 수정 */
-  .hd-menu3 {
-      display: none;
-      position: absolute;
-      top: 32px;
-      left:-10px;
-      background-color: #80bcbd;
-      border-radius: 35px;
-      width:130px ;
-      text-align: center;
-      padding: 20px 0;
-      z-index: 1;
-      line-height: 1.2;
-    }
+ 
 
     /* callcenter */
     .callct-wrap{
