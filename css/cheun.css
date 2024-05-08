@@ -471,14 +471,6 @@ video::-webkit-media-controls-fullscreen-button {
   }
 }
 @media screen and (max-width: 1067px) {
-  #callimg {
-    width: 12%;
-    height: 22%;
-    position: absolute;
-    right: 80%;
-    top: 36%;
-    transform: rotate(25deg);
-  }
   .header-signup button {
     font-size: 1.2rem;
   }
