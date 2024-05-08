@@ -174,7 +174,8 @@
 }
 #login-Id, #login-Pwd{
   font-family: "Pretendard-Regular";
-  padding: 4% 27% 4% 4%;
+  width: 78%;
+  padding: 4% 0% 4% 4%;
   border: 0.5px solid #959595;
   font-size: 1.1rem;
 }

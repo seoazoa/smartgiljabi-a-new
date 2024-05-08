@@ -192,17 +192,17 @@
               </ul>
             </div>
             <script>
-              const menuItems = document.querySelectorAll('.login-menu ul li');
+              const menuItems = document.querySelectorAll(".login-menu ul li");
 
-// 각 li 요소에 클릭 이벤트를 추가합니다.
-menuItems.forEach(item => {
-  item.addEventListener('click', () => {
-    // 이전에 클릭된 요소의 active 클래스를 제거합니다.
-    document.querySelector('.login-menu ul li.active').classList.remove('active');
-    // 클릭된 요소에 active 클래스를 추가합니다.
-    item.classList.add('active');
-  });
-});
+              // 각 li 요소에 클릭 이벤트를 추가합니다.
+              menuItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                  // 이전에 클릭된 요소의 active 클래스를 제거합니다.
+                  document.querySelector(".login-menu ul li.active").classList.remove("active");
+                  // 클릭된 요소에 active 클래스를 추가합니다.
+                  item.classList.add("active");
+                });
+              });
             </script>
             <div class="login-con">
               <span class="login-text">로그인</span>
@@ -219,14 +219,11 @@ menuItems.forEach(item => {
                 <div class="log-left">
                   <p class="ilbantit">일반 로그인</p>
                   <p class="log-id">아이디</p>
-                  <input type="text" id="login-Id" placeholder="아이디를 입력해주세요."><br>
+                  <input type="text" id="login-Id" placeholder="아이디를 입력해주세요." /><br />
                   <p class="log-pw">비밀번호</p>
-                  <input type="password" id="login-Pwd" placeholder="비밀번호를 입력해주세요."><br>
-                  <div class="checkbox">
-                    <input type="checkbox"> <span>아이디 저장</span>
-                    <input type="checkbox" id="autologin" > <span>자동 로그인</span> <br>
-                  </div> 
-                  <button id="login_Btn">로그인</button> <br>
+                  <input type="password" id="login-Pwd" placeholder="비밀번호를 입력해주세요." /><br />
+                  <div class="checkbox"><input type="checkbox" /> <span>아이디 저장</span> <input type="checkbox" id="autologin" /> <span>자동 로그인</span> <br /></div>
+                  <button id="login_Btn">로그인</button> <br />
                   <button type="button" id="btnlogin">아이디 찾기</button>
                   <button type="button" id="btnlogin">비밀번호 찾기</button>
                   <a href="join.html"><button type="button" id="signUp_Btn">회원가입</button></a>
@@ -234,10 +231,13 @@ menuItems.forEach(item => {
                 <div class="log-right">
                   <p class="ilbantit">SNS 간편 로그인</p>
                   <div class="snslogin">
-                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"><img src="images/login/naver.png" alt="네이버"></a>
-                    <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fservice%3D52%26category%3D166%26locale%3Dko#login"><img src="images/login/kakao.png" alt="카카오"></a>
-                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dko&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dko&hl=ko&osid=1&passive=1209600&ifkv=AaSxoQyngxAP2rH6AnqK77pgufsO6S1twuCnN2OP99Nm0EuGUriRjGRcL3wOgTmwc_O-9qvr-GZi9w&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="images/login/google.png" alt="구글"></a>
-                    <a href="https://m.facebook.com/"><img src="images/login/facebook.png" alt="페이스북"></a>
+                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"><img src="images/login/naver.png" alt="네이버" /></a>
+                    <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fservice%3D52%26category%3D166%26locale%3Dko#login"><img src="images/login/kakao.png" alt="카카오" /></a>
+                    <a
+                      href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dko&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dko&hl=ko&osid=1&passive=1209600&ifkv=AaSxoQyngxAP2rH6AnqK77pgufsO6S1twuCnN2OP99Nm0EuGUriRjGRcL3wOgTmwc_O-9qvr-GZi9w&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                      ><img src="images/login/google.png" alt="구글"
+                    /></a>
+                    <a href="https://m.facebook.com/"><img src="images/login/facebook.png" alt="페이스북" /></a>
                   </div>
                 </div>
               </div>
