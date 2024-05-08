@@ -132,11 +132,11 @@ video::-webkit-media-controls-fullscreen-button {
   z-index: 99;
 }
 .disabled {
-  opacity: 0.5; /* ºñÈ°¼ºÈ­µÈ »óÅÂÀÏ ¶§ Åõ¸íµµ Á¶Àı */
-  pointer-events: none; /* ºñÈ°¼ºÈ­µÈ »óÅÂÀÏ ¶§ ÀÌº¥Æ® ¹«½Ã */
-  cursor: not-allowed; /* ºñÈ°¼ºÈ­µÈ »óÅÂÀÏ ¶§ Ä¿¼­ ½ºÅ¸ÀÏ º¯°æ */
+  opacity: 0.5; /* ë¹„í™œì„±í™”ëœ ìƒíƒœì¼ ë•Œ íˆ¬ëª…ë„ ì¡°ì ˆ */
+  pointer-events: none; /* ë¹„í™œì„±í™”ëœ ìƒíƒœì¼ ë•Œ ì´ë²¤íŠ¸ ë¬´ì‹œ */
+  cursor: not-allowed; /* ë¹„í™œì„±í™”ëœ ìƒíƒœì¼ ë•Œ ì»¤ì„œ ìŠ¤íƒ€ì¼ ë³€ê²½ */
 }
-/* µî·ÏÇÏ·¯°¡±â */
+/* ë“±ë¡í•˜ëŸ¬ê°€ê¸° */
 .regist {
   position: relative;
   display: block;
@@ -236,7 +236,7 @@ video::-webkit-media-controls-fullscreen-button {
 }
 @media screen and (max-width: 440px) {
   .inner {
-    max-width: 420px;
+    max-width: 360px;
   }
   .top-banner {
     height: 320px;
@@ -260,9 +260,16 @@ video::-webkit-media-controls-fullscreen-button {
     width: 100%;
     gap: 15px;
   }
+  .erinfo-subtitle {
+    display: none;
+  }
+  .sw-enrol .erinfo-title {
+    word-break: keep-all;
+    height: 15vw;
+  }
   .sw-enrol .enroll-list-li {
-    margin-bottom: 15%;
-    height: 74vw;
+    margin-bottom: 20%;
+    height: 80vw;
   }
   .enroll-info-right {
     padding: 45px 35px;
@@ -285,9 +292,41 @@ video::-webkit-media-controls-fullscreen-button {
     line-height: 1.24;
   }
   .regist-btn {
-    width: 65%;
+    width: 80%;
     margin-top: 35px;
     font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .sw-enrol .enroll-list-li {
+    margin-bottom: 15%;
+    height: 80vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .inner{
+    max-width: 320px;
+  }
+  .title{
+    font-size: 2.2rem;
+  }
+  .sw-enrol .enroll-list-li {
+    margin-bottom: 20%;
+    height: 80vw;
+  }
+  .enroll-info-right {
+    padding: 25px;
+  }
+  .regist-btn {
+    width: 100%;
+    margin-top: 35px;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .sw-enrol .enroll-list-li {
+    margin-bottom: 15%;
+    height: 85vw;
   }
 }
 @media screen and (max-width: 340px) {
@@ -312,15 +351,13 @@ video::-webkit-media-controls-fullscreen-button {
     word-break: keep-all;
     height: 15vw;
   }
-  .erinfo{
+  .erinfo {
     text-align: center;
   }
-  .erinfo-subtitle {
-    display: none;
-  }
+
   .sw-enrol .enroll-list-li {
-    margin-bottom: 15%;
-    height: 99vw;
+    margin-bottom: 20%;
+    height: 90vw;
   }
   .enroll-info-right {
     padding: 35px 20px;

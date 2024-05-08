@@ -48,18 +48,18 @@
 .city-ul.show {
   display: block;
 }
-/* ½ºÅ©·Ñ¹ÙÀÇ Æø ³Êºñ */
+/* ìŠ¤í¬ë¡¤ë°”ì˜ í­ ë„ˆë¹„ */
 .area-ul::-webkit-scrollbar, .city-ul::-webkit-scrollbar {
   width: 7px;
 }
 
 .area-ul::-webkit-scrollbar-thumb, .city-ul::-webkit-scrollbar-thumb {
-  background: #80bcbd; /* ½ºÅ©·Ñ¹Ù »ö»ó */
-  border-radius: 10px; /* ½ºÅ©·Ñ¹Ù µÕ±Ù Å×µÎ¸® */
+  background: #80bcbd; /* ìŠ¤í¬ë¡¤ë°” ìƒ‰ìƒ */
+  border-radius: 10px; /* ìŠ¤í¬ë¡¤ë°” ë‘¥ê·¼ í…Œë‘ë¦¬ */
 }
 
 .area-ul::-webkit-scrollbar-track, .city-ul::-webkit-scrollbar-track {
-  background: #ececec; /*½ºÅ©·Ñ¹Ù µŞ ¹è°æ »ö»ó*/
+  background: #ececec; /*ìŠ¤í¬ë¡¤ë°” ë’· ë°°ê²½ ìƒ‰ìƒ*/
 }
 .area-ul li,
 .city-ul li {

@@ -36,9 +36,9 @@
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   padding-top: 30px;
 }
-/* í—¤ë” ë¶€ë©”ë‰´ ìˆ˜ì • */
+/* ÑA”á ¦¡A“A ®¸÷ */
 
-  /* ë””ì§€í„¸ ì—­ëŸ‰ì§„ë‹¨ */
+  /* —¡»¡Èé µbœ·»¥”e */
   .level-wrap{
     display: flex;
     flex-direction: column;
@@ -170,7 +170,7 @@ width: 100%;
  }
  
  .cd-bt1 > a >button:hover{
-   background-color: #80bcbd; /* í˜¸ë²„ ì‹œ ë°°ê²½ìƒ‰ì´ ë‚˜íƒ€ë‚©ë‹ˆë‹¤. */
+   background-color: #80bcbd; /* Ñ¡¤á ¯¡ ¤‰w¬‚·¡ aÈas“¡”a. */
    color: white; 
  }
  .cd-bt2 {
@@ -190,7 +190,7 @@ width: 100%;
    transition: background-color 0.3s, color 0.3s;
  }
  .cd-bt2 > a >button:hover{
-   background-color: #80bcbd; /* í˜¸ë²„ ì‹œ ë°°ê²½ìƒ‰ì´ ë‚˜íƒ€ë‚©ë‹ˆë‹¤. */
+   background-color: #80bcbd; /* Ñ¡¤á ¯¡ ¤‰w¬‚·¡ aÈas“¡”a. */
    color: white; 
  }
  .lv-write2{
@@ -259,35 +259,35 @@ margin-bottom:2%;
    width: 100%;
  }
  .lv-img li {
-   position: relative; /* í¬ì§€ì…˜ ì„¤ì • */
- /* ì¸ë¼ì¸ ë¸”ë¡ìœ¼ë¡œ ì„¤ì • */
+   position: relative; /* Í¡»¡­e ¬é¸÷ */
+ /* ·¥œa·¥ §i¢·a¡ ¬é¸÷ */
    text-align: center;
    line-height: 1.4;
  }
  
  .lv-img li img {
-   display: block; /* ì´ë¯¸ì§€ë¥¼ ë¸”ë¡ ìš”ì†Œë¡œ ì„¤ì • */
-   transition: opacity 0.3s; /* ë¶€ë“œëŸ¬ìš´ ì „í™˜ íš¨ê³¼ ì¶”ê°€ */
+   display: block; /* ·¡£¡»¡Ÿi §i¢ ¶a­¡¡ ¬é¸÷ */
+   transition: opacity 0.3s; /* ¦—aœá¶… ¸åÑÅ Òa‰Á Âˆa */
  }
  
  .lv-img li:hover img {
-   opacity: 0.7; /* í˜¸ë²„ ì‹œ ì´ë¯¸ì§€ì˜ íˆ¬ëª…ë„ ì¡°ì ˆ */
+   opacity: 0.7; /* Ñ¡¤á ¯¡ ·¡£¡»¡· Ê¡w•¡ ¹¡¸é */
  }
  
  .lv-wt {
-   position: absolute; /* í¬ì§€ì…˜ ì„¤ì • */
-   top: 50%; /* ìƒë‹¨ ì—¬ë°±ì„ 50%ë¡œ ì„¤ì •í•˜ì—¬ ì„¸ë¡œ ì¤‘ì•™ ì •ë ¬ */
-   left: 50%; /* ì¢Œì¸¡ ì—¬ë°±ì„ 50%ë¡œ ì„¤ì •í•˜ì—¬ ê°€ë¡œ ì¤‘ì•™ ì •ë ¬ */
-   transform: translate(-50%, -50%); /* ê°€ë¡œ, ì„¸ë¡œ ì¤‘ì•™ ì •ë ¬ */
-   background-color: rgba(0, 0, 0, 0.7); /* ë°°ê²½ìƒ‰ ë° íˆ¬ëª…ë„ ì„¤ì • */
-   padding: 10px; /* ë‚´ë¶€ ì—¬ë°± ì¶”ê°€ */
-   color: white; /* í…ìŠ¤íŠ¸ ìƒ‰ìƒ ì„¤ì • */
-   opacity: 0; /* ì´ˆê¸° íˆ¬ëª…ë„ë¥¼ 0ìœ¼ë¡œ ì„¤ì •í•˜ì—¬ ìˆ¨ê¹€ */
-   transition: opacity 0.3s; /* ë¶€ë“œëŸ¬ìš´ ì „í™˜ íš¨ê³¼ ì¶”ê°€ */
+   position: absolute; /* Í¡»¡­e ¬é¸÷ */
+   top: 50%; /* ¬w”e µa¤‚·i 50%¡ ¬é¸÷Ğaµa ­A¡ º—´w ¸÷i */
+   left: 50%; /* ¹ÁÃb µa¤‚·i 50%¡ ¬é¸÷Ğaµa ˆa¡ º—´w ¸÷i */
+   transform: translate(-50%, -50%); /* ˆa¡, ­A¡ º—´w ¸÷i */
+   background-color: rgba(0, 0, 0, 0.7); /* ¤‰w¬‚ £¹ Ê¡w•¡ ¬é¸÷ */
+   padding: 10px; /* ¦ µa¤‚ Âˆa */
+   color: white; /* ÉB¯aËa ¬‚¬w ¬é¸÷ */
+   opacity: 0; /* Á¡‹¡ Ê¡w•¡Ÿi 0·a¡ ¬é¸÷Ğaµa ®‘‹± */
+   transition: opacity 0.3s; /* ¦—aœá¶… ¸åÑÅ Òa‰Á Âˆa */
  }
  
  .lv-img li:hover .lv-wt {
-   opacity: 1; /* í˜¸ë²„ ì‹œ í…ìŠ¤íŠ¸ì˜ íˆ¬ëª…ë„ë¥¼ 1ë¡œ ì„¤ì •í•˜ì—¬ ë³´ì´ë„ë¡ í•¨ */
+   opacity: 1; /* Ñ¡¤á ¯¡ ÉB¯aËa· Ê¡w•¡Ÿi 1¡ ¬é¸÷Ğaµa ¥¡·¡•¡¢ Ğq */
  }
 
 

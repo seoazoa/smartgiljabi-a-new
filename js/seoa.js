@@ -141,3 +141,8 @@ $(document).ready(function () {
     window.location.href = "level.html";
   });
 });
+$(document).ready(function () {
+  $("#morebtn").on("click", function () {
+    window.location.href = "edu_list.html";
+  });
+});

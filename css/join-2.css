@@ -23,15 +23,15 @@
   }
   .login-menu ul li:first-child::after,
   .login-menu ul li:last-child::after {
-    display: none; /* ì²« ë²ˆì§¸ liì™€ ë§ˆì§€ë§‰ liì˜ ì„ ì„ ìˆ¨ê¹ë‹ˆë‹¤. */
+    display: none; /* Ã¹ ¹øÂ° li¿Í ¸¶Áö¸· liÀÇ ¼±À» ¼û±é´Ï´Ù. */
   }
-  .login-menu ul li {/* ê¸°ë³¸ ë°°ê²½ìƒ‰ */
+  .login-menu ul li {/* ±âº» ¹è°æ»ö */
     cursor: pointer;
   }
   
   .login-menu ul li.active {
     background-color: #aad9bb;
-    color: #fff; /* í´ë¦­ëœ liì˜ í…ìŠ¤íŠ¸ ìƒ‰ìƒ */
+    color: #fff; /* Å¬¸¯µÈ liÀÇ ÅØ½ºÆ® »ö»ó */
   }
   .login-menu ul li.active a{
     color: #fff;

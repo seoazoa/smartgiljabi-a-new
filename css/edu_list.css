@@ -260,7 +260,7 @@
 .no-br {
   display: none;
 }
-/* ??YAACu */
+/* 반응형 */
 @media screen and (max-width: 1220px) {
   html {
     font-size: 13px;
