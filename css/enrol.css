@@ -159,7 +159,7 @@
     padding-top: 0;
   }
   .enrol-box {
-    padding: 35px;
+    padding: 25px;
     word-break: keep-all;
     line-height: 1.24;
   }
@@ -203,10 +203,10 @@
   .box-title {
     word-break: keep-all;
   }
-  .b-320{
+  .b-320 {
     display: block;
   }
-  .sub-title{
+  .sub-title {
     line-height: 1.24;
     margin: 35px 0;
   }
